@@ -6,7 +6,7 @@ body#grilla, body#grilla1 {
     background-color: #0D0D0D; }
   body#grilla .ulBarra .ulCategorias .categorias, body#grilla .cat, body#grilla1 .ulBarra .ulCategorias .categorias, body#grilla1 .cat {
     color: white; }
-  body#grilla #secCate, body#grilla .bodyPrin #secCate--2, #grilla1 .bodyPrin body#grilla #secCate--2, body#grilla .bodyPrin #secCate--21, #grilla1 .bodyPrin body#grilla #secCate--21, body#grilla .bodyPrin #secCate--22, #grilla1 .bodyPrin body#grilla #secCate--22, body#grilla .bodyPrin #secCate--23, #grilla1 .bodyPrin body#grilla #secCate--23, body#grilla .bodyPrin #secCate--3, #grilla1 .bodyPrin body#grilla #secCate--3, body#grilla .bodyPrin #secCate--31, #grilla1 .bodyPrin body#grilla #secCate--31, body#grilla1 #secCate, #grilla .bodyPrin body#grilla1 #secCate--2, body#grilla1 .bodyPrin #secCate--2, #grilla .bodyPrin body#grilla1 #secCate--21, body#grilla1 .bodyPrin #secCate--21, #grilla .bodyPrin body#grilla1 #secCate--22, body#grilla1 .bodyPrin #secCate--22, #grilla .bodyPrin body#grilla1 #secCate--23, body#grilla1 .bodyPrin #secCate--23, #grilla .bodyPrin body#grilla1 #secCate--3, body#grilla1 .bodyPrin #secCate--3, #grilla .bodyPrin body#grilla1 #secCate--31, body#grilla1 .bodyPrin #secCate--31 {
+  body#grilla #secCate, body#grilla .bodyPrin #secCate--2, #grilla1 .bodyPrin body#grilla #secCate--2, body#grilla .bodyPrin #secCate--21, #grilla1 .bodyPrin body#grilla #secCate--21, body#grilla .bodyPrin #secCate--22, #grilla1 .bodyPrin body#grilla #secCate--22, body#grilla .bodyPrin #secCate--23, #grilla1 .bodyPrin body#grilla #secCate--23, body#grilla .bodyPrin #secCate--3, #grilla1 .bodyPrin body#grilla #secCate--3, body#grilla .bodyPrin #secCate--31, #grilla1 .bodyPrin body#grilla #secCate--31, body#grilla .bodyPrin #secCate--32, #grilla1 .bodyPrin body#grilla #secCate--32, body#grilla .bodyPrin #secCate--33, #grilla1 .bodyPrin body#grilla #secCate--33, body#grilla1 #secCate, #grilla .bodyPrin body#grilla1 #secCate--2, body#grilla1 .bodyPrin #secCate--2, #grilla .bodyPrin body#grilla1 #secCate--21, body#grilla1 .bodyPrin #secCate--21, #grilla .bodyPrin body#grilla1 #secCate--22, body#grilla1 .bodyPrin #secCate--22, #grilla .bodyPrin body#grilla1 #secCate--23, body#grilla1 .bodyPrin #secCate--23, #grilla .bodyPrin body#grilla1 #secCate--3, body#grilla1 .bodyPrin #secCate--3, #grilla .bodyPrin body#grilla1 #secCate--31, body#grilla1 .bodyPrin #secCate--31, #grilla .bodyPrin body#grilla1 #secCate--32, body#grilla1 .bodyPrin #secCate--32, #grilla .bodyPrin body#grilla1 #secCate--33, body#grilla1 .bodyPrin #secCate--33 {
     background-color: #43736A;
     color: white; }
   body#grilla .divCate1__pCate, body#grilla footer, body#grilla h2, body#grilla .formularioForm__formulario, body#grilla p, body#grilla .mediosContacto__medios, body#grilla1 .divCate1__pCate, body#grilla1 footer, body#grilla1 h2, body#grilla1 .formularioForm__formulario, body#grilla1 p, body#grilla1 .mediosContacto__medios {
@@ -141,7 +141,7 @@ header .header__logo {
   border-radius: 1rem;
   border: solid black 0.1rem; }
 
-body#grilla1 #secCate:hover, #grilla .bodyPrin body#grilla1 #secCate--2:hover, body#grilla1 .bodyPrin #secCate--2:hover, #grilla .bodyPrin body#grilla1 #secCate--21:hover, body#grilla1 .bodyPrin #secCate--21:hover, #grilla .bodyPrin body#grilla1 #secCate--22:hover, body#grilla1 .bodyPrin #secCate--22:hover, #grilla .bodyPrin body#grilla1 #secCate--23:hover, body#grilla1 .bodyPrin #secCate--23:hover, #grilla .bodyPrin body#grilla1 #secCate--3:hover, body#grilla1 .bodyPrin #secCate--3:hover, #grilla .bodyPrin body#grilla1 #secCate--31:hover, body#grilla1 .bodyPrin #secCate--31:hover {
+body#grilla1 #secCate:hover, #grilla .bodyPrin body#grilla1 #secCate--2:hover, body#grilla1 .bodyPrin #secCate--2:hover, #grilla .bodyPrin body#grilla1 #secCate--21:hover, body#grilla1 .bodyPrin #secCate--21:hover, #grilla .bodyPrin body#grilla1 #secCate--22:hover, body#grilla1 .bodyPrin #secCate--22:hover, #grilla .bodyPrin body#grilla1 #secCate--23:hover, body#grilla1 .bodyPrin #secCate--23:hover, #grilla .bodyPrin body#grilla1 #secCate--3:hover, body#grilla1 .bodyPrin #secCate--3:hover, #grilla .bodyPrin body#grilla1 #secCate--31:hover, body#grilla1 .bodyPrin #secCate--31:hover, #grilla .bodyPrin body#grilla1 #secCate--32:hover, body#grilla1 .bodyPrin #secCate--32:hover, #grilla .bodyPrin body#grilla1 #secCate--33:hover, body#grilla1 .bodyPrin #secCate--33:hover {
   transform: scale(1.1, 1.1); }
 
 .dondeEncontrarnos__mapa {
@@ -338,7 +338,7 @@ footer {
     grid-row-gap: 3rem;
     grid-area: body;
     margin: 1rem; }
-  #grilla #secCate, #grilla .bodyPrin #secCate--2, #grilla1 .bodyPrin #grilla #secCate--2, #grilla .bodyPrin #secCate--21, #grilla1 .bodyPrin #grilla #secCate--21, #grilla .bodyPrin #secCate--22, #grilla1 .bodyPrin #grilla #secCate--22, #grilla .bodyPrin #secCate--23, #grilla1 .bodyPrin #grilla #secCate--23, #grilla .bodyPrin #secCate--3, #grilla1 .bodyPrin #grilla #secCate--3, #grilla .bodyPrin #secCate--31, #grilla1 .bodyPrin #grilla #secCate--31, #grilla1 #secCate, #grilla .bodyPrin #grilla1 #secCate--2, #grilla1 .bodyPrin #secCate--2, #grilla .bodyPrin #grilla1 #secCate--21, #grilla1 .bodyPrin #secCate--21, #grilla .bodyPrin #grilla1 #secCate--22, #grilla1 .bodyPrin #secCate--22, #grilla .bodyPrin #grilla1 #secCate--23, #grilla1 .bodyPrin #secCate--23, #grilla .bodyPrin #grilla1 #secCate--3, #grilla1 .bodyPrin #secCate--3, #grilla .bodyPrin #grilla1 #secCate--31, #grilla1 .bodyPrin #secCate--31 {
+  #grilla #secCate, #grilla .bodyPrin #secCate--2, #grilla1 .bodyPrin #grilla #secCate--2, #grilla .bodyPrin #secCate--21, #grilla1 .bodyPrin #grilla #secCate--21, #grilla .bodyPrin #secCate--22, #grilla1 .bodyPrin #grilla #secCate--22, #grilla .bodyPrin #secCate--23, #grilla1 .bodyPrin #grilla #secCate--23, #grilla .bodyPrin #secCate--3, #grilla1 .bodyPrin #grilla #secCate--3, #grilla .bodyPrin #secCate--31, #grilla1 .bodyPrin #grilla #secCate--31, #grilla .bodyPrin #secCate--32, #grilla1 .bodyPrin #grilla #secCate--32, #grilla .bodyPrin #secCate--33, #grilla1 .bodyPrin #grilla #secCate--33, #grilla1 #secCate, #grilla .bodyPrin #grilla1 #secCate--2, #grilla1 .bodyPrin #secCate--2, #grilla .bodyPrin #grilla1 #secCate--21, #grilla1 .bodyPrin #secCate--21, #grilla .bodyPrin #grilla1 #secCate--22, #grilla1 .bodyPrin #secCate--22, #grilla .bodyPrin #grilla1 #secCate--23, #grilla1 .bodyPrin #secCate--23, #grilla .bodyPrin #grilla1 #secCate--3, #grilla1 .bodyPrin #secCate--3, #grilla .bodyPrin #grilla1 #secCate--31, #grilla1 .bodyPrin #secCate--31, #grilla .bodyPrin #grilla1 #secCate--32, #grilla1 .bodyPrin #secCate--32, #grilla .bodyPrin #grilla1 #secCate--33, #grilla1 .bodyPrin #secCate--33 {
     justify-items: stretch;
     align-items: stretch;
     overflow: auto;
@@ -366,7 +366,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    grid-template-areas: "im1 im2 lp" "im3 im4 lp1"; }
+    grid-template-areas: "im1 im2 lp lp2" "im3 im4 lp1 lp3"; }
     #grilla .bodyPrin #secCate--2, #grilla1 .bodyPrin #secCate--2 {
       grid-area: im1; }
     #grilla .bodyPrin #secCate--21, #grilla1 .bodyPrin #secCate--21 {
@@ -379,6 +379,10 @@ footer {
       grid-area: lp; }
     #grilla .bodyPrin #secCate--31, #grilla1 .bodyPrin #secCate--31 {
       grid-area: lp1; }
+    #grilla .bodyPrin #secCate--32, #grilla1 .bodyPrin #secCate--32 {
+      grid-area: lp2; }
+    #grilla .bodyPrin #secCate--33, #grilla1 .bodyPrin #secCate--33 {
+      grid-area: lp3; }
   #grilla .aI1, #grilla1 .aI1 {
     margin-top: 1rem; }
   #grilla .navbar.navbar-light.bg-light.fixed-top, #grilla1 .navbar.navbar-light.bg-light.fixed-top {

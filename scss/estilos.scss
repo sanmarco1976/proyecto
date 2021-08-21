@@ -235,8 +235,8 @@
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
         grid-template-areas:
-        "im1 im2 lp"
-        "im3 im4 lp1";
+        "im1 im2 lp lp2"
+        "im3 im4 lp1 lp3";
         #secCate--2{
             grid-area: im1;
             @extend #secCate
@@ -259,6 +259,14 @@
         }
         #secCate--31{
             grid-area: lp1;
+            @extend #secCate
+        }
+        #secCate--32{
+            grid-area: lp2;
+            @extend #secCate
+        }
+        #secCate--33{
+            grid-area: lp3;
             @extend #secCate
         }
     }
