@@ -1,0 +1,379 @@
+/* comienza responsive */
+@media only screen and (max-width: 12000px){
+    .navbar{
+        display: none;
+    }
+}
+/* responsive para medidas maximas 1440px */
+@media only screen and (max-width: 1440px){
+    #grilla{
+        grid-template-columns: auto;
+        grid-template-areas:
+        "nav"
+        "header"
+        "body  "
+        "footer ";
+        nav{
+            height: 100%;
+            
+        }
+
+    }
+    .header{
+        grid-template-columns: 1fr 3fr;   
+        h1{
+            font-size: 1.5rem;
+
+        }
+        .header__logo{
+            width: 5.4rem;
+            height: 5.4rem;
+        }
+    }
+    #grilla1{
+        .divCate1, .divCate1--divCate2, .divCate1--divCate3{
+            grid-template-areas: 
+            "nom"
+            "img"
+            "des";
+        }
+    }
+    
+    .descripcion{
+        margin-bottom: 0.4rem;
+        margin-left: 0.3rem;
+    }
+    .quienesSomos{
+       margin-left: 0rem;
+       margin-right: 0rem;
+    }
+    .logo-s3{
+        margin-left: 0rem;
+        width: 12rem;
+        height: 12rem;
+    }
+}
+
+/* responsive para medidas maximas 768px */
+@media only screen and (max-width: 768px){
+    #grilla{
+        grid-template-columns: auto auto;
+        grid-template-areas:
+        "nav header"
+        "body body "
+        "footer footer";
+        .header{
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr;
+            grid-template-areas: 
+            "logo"
+            "h1";
+            
+            .header__logo{
+                width: 3rem;
+                height: 3rem;
+                margin: 1rem  0rem 0rem  1rem;
+            }
+            h1{
+                font-size: 1.3rem;
+                margin: 0rem;
+                margin-bottom: 1.1rem;
+            }
+        }
+        nav{
+            .cat{
+                font-size: 1.1rem;
+            }
+        }
+        .imgPagPrincipal{
+            height: 35rem;
+            .w-100{
+                width: 35rem!important;
+            }
+        }
+        .footer{
+            grid-template-areas: 
+            "info none"
+            "compra envios"
+            "segura wpp"
+          
+        }
+        
+    }
+    #grilla1{
+        grid-template-areas:
+        "nav"
+        "body"
+        "footer";
+        nav{
+            grid-row: 1/2;
+            grid-column: 1/7; 
+            margin-bottom: 3rem;
+        }
+        .bodyCate{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            "b1 b2"
+            "b3 b4"
+            "b5 b6";
+            margin-top: 3rem;
+            .divCate1, .divCate1--divCate2, .divCate1--divCate3{
+                grid-template-areas: 
+                "nom"
+                "img"
+                "des";
+            }
+            .divCate1__pCate{
+                font-size: 1.5rem;
+            }
+            .divCate1__imgCate{
+                width: 7rem;
+                height: 7rem;
+                margin-top: 0.7rem;
+                margin-bottom: 0.7rem;
+            }
+            .descripcion{
+                font-size: 1rem;
+                margin-bottom: 0.4rem;
+                margin-left: -1rem;
+            }
+        }
+        #quienesSomosDiv{
+            grid-template-columns: auto;
+            grid-template-areas: 
+            "img"
+            "p";
+            gap: 0.8rem;
+        }
+        .footer{
+            grid-template-areas: 
+            "info none"
+            "compra envios"
+            "segura wpp"
+          
+        }
+        .dondeEstamos{
+            .dondeEncontrarnos{
+                margin-left: 3rem;
+            }
+        }
+    }
+    .precioPrincipal{
+        font-size: 1.5rem;
+    }
+    .quienesSomos{
+        font-size: 1rem;
+        margin: 1rem;
+    }
+    .logo-s3{
+        width: 8rem;
+        height: 8rem;
+        margin: 1rem;
+    }
+    .form{
+        grid-row: 2/5;
+        grid-column: 1/7;
+    }
+}
+@media only screen and (max-width: 530px){
+    #grilla{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+        "nav header "
+        "body body "
+        "footer footer";
+        .header{
+            @include header;
+            .header__logo{
+                width: 4rem;
+                height: 4rem;
+                margin: $margin1rem;
+            }
+            h1{
+                font-size: 3rem;
+                margin: $margin1rem;
+            }
+        }
+        nav{
+            .navbar{
+                display: flex;
+                height: auto;
+            }
+        }
+        #imgPrecPrin{
+            grid-column: 2/5;
+        }
+        .imgPagPrincipal{
+            height: 20rem;
+            .w-100{
+                width: 20rem!important;
+            }
+            
+        }
+        footer{
+            grid-column: 1/5;
+        }
+    }
+    #grilla1{
+        nav{
+            .cat{
+                font-size: 1rem;
+            }
+        }
+    
+        .formularioForm, .mediosContacto__medios{
+            margin-left: -1rem;
+            margin-right: 1rem;
+        }
+    }
+}
+@media only screen and (max-width: 480px){
+    #grilla{
+        grid-template-rows: 2.5% auto auto auto;
+        grid-template-areas: 
+        "nav"
+        "header"
+        "body"
+        "footer";
+        .header{
+            grid-column: 1/5;
+            grid-row: 2/3;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "logo h1";
+            margin-top: -5rem;
+                h1{
+                    font-size: 2.5rem;
+                    margin: 0rem;
+                    margin-top: 1rem;
+                }
+        }
+        nav{
+            height: 0rem;
+            .ulBarra{
+                display: none;
+                
+            }
+        }
+        #imgPrecPrin{
+            grid-column: 2/5;
+            margin-top: 5rem;
+            margin-left: -5rem;
+        }
+        .imgPagPrincipal{
+            height: 20rem;
+            .w-100{
+                width: 18rem!important;
+            }
+        }
+        .footer{
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "info"
+            "compra"
+            "envios"
+            "segura"
+            "wpp";
+            .card-header, .card-title, .card-text{
+                font-size: 0.9rem;
+            }
+        }
+        .navbar{
+            display: flex;
+        }
+        .bodyPrin{
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "im1"
+            "im2"
+            "im3"
+            "im4"
+            "lp"
+            "lp1";
+        }
+        .colorDes,.colorDes1{
+            font-size: 1.4rem;
+        }
+    }
+    #grilla1{
+        nav{
+            .ulBarra{
+              display: none;
+            }
+            margin-bottom: 1rem;
+        }
+        .navbar{
+            display: flex;
+        }
+        .bodyCate{
+            grid-template-columns: 1fr;
+            grid-template-rows: auto ;
+            grid-template-areas:
+            "b1"
+            "b2"
+            "b3"
+            "b4"
+            "b5" 
+            "b6";
+            grid-column-gap: 1rem;
+            grid-row-gap: 1rem;
+            grid-area: body;
+            margin-top: 0rem;
+            margin-left: $margin1rem;
+            margin-right: $margin1rem;
+        }
+        footer{
+            margin-top: 3rem;
+        }
+        .footer{
+        
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "info"
+            "compra"
+            "envios"
+            "segura"
+            "wpp";
+            .card-header, .card-title, .card-text{
+                font-size: 0.9rem;
+            }
+        }
+        #quienesSomosDiv{
+            background-color: $colorPrinFondo!important;
+        }
+        .logo-s3{
+            display: none;
+        }
+        .dondeEstamos{
+            .dondeEncontrarnos{
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "info"
+                "mapa"
+                "horarios";
+                .dondeEncontrarnos__ul{
+                    margin-left: -3rem!important;
+                    .btn.btn-secondary.dropdown-toggle{
+                        width: 7rem;
+                        height: 2rem;
+                    }
+                    ul.dropdown-menu.show{
+                        .dondeEncontrarnos__li--horarios{
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+                .dondeEncontrarnos__p{
+                    .dondeEncontrarnos__p--texto, .colorDirecc{
+                        font-size: 1.6rem;
+                    }
+                }
+                .dondeEncontrarnos__mapa{
+                    width: 15rem;
+                    height: 15rem;
+                }
+            }
+        }
+    }
+}

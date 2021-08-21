@@ -1,0 +1,55 @@
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    h1{
+        color: white;
+        text-transform: $textUppercase;
+        font-style: bold;
+        margin-top: 1rem;
+        font-size: 6rem;
+    }
+}
+h2{
+    text-transform: $textUppercase;
+}
+.navBarh5{
+    font-size: 3rem;
+}
+.nav-link{
+    font-size: 1.3rem;
+}
+footer{
+    font-size: 1rem;
+    text-transform: capitalize;
+    word-spacing: 0.3rem;
+}
+.quienesSomos{
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+}
+.footer__mediosPago, .footer__envios{
+    font-size: 0.9rem;
+}
+p{
+    font-size: 1.4rem;
+}
+.formularioForm__formulario{
+    list-style-type: none;
+    word-spacing: 0.2rem;
+}
+li{
+    list-style: none;
+}
+p{
+    text-transform: capitalize;
+}
+.dondeEncontrarnos__li--horarios{
+    text-transform: capitalize;
+}
+h3{
+    text-transform: $textUppercase;
+    text-decoration: underline;
+    font-size: 3rem;
+}

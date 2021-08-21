@@ -1,0 +1,33 @@
+
+/* esto lo utilizare en un futuro para
+poner todas las fotos y
+descipciones del producto
+y ya tener creado un div */
+@for $i from 1 through 6 {
+    .divCate-#{$i} {grid-area: b#{$i}}
+}
+/* algo momentaneo */
+$medida:chico;
+    footer{
+        @if $medida == grande {
+                background-color: $colorSec;
+        } @else if $medida == mediano {
+                background-color: $colorPrinFondo;
+        } @else if $medida == chico {
+                background-color: $colorNegro
+        } @else {
+                background-color: white;
+        }
+    }
+@mixin display {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;   
+}
+@mixin header{
+    grid-column: 2/5;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "logo h1";
+}

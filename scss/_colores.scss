@@ -1,0 +1,72 @@
+body#grilla, body#grilla1{
+    background-color: $colorPrinFondo;
+    header, #quienesSomosDiv, .mediosContacto,.form{
+        background-color:$colorSec;
+    }
+    nav .ulBarra, nav .ulBarra .ulCategorias, nav{
+        background-color:$colorNegro;
+    }
+    .ulBarra .ulCategorias .categorias,.cat{
+        color:rgb(255, 255, 255);
+    }
+    #secCate{
+        background-color: $colorSec;
+        color:rgb(255, 255, 255);  
+    }
+    .divCate1__pCate, footer, h2, .formularioForm__formulario, p, .mediosContacto__medios{
+        color:rgb(255, 255, 255);
+    }
+    .cat:hover{
+        background-color: $colorPrinFondo;
+    }
+    select, option, input{
+        background-color: rgb(197, 201, 206);
+    }
+}
+.bg-light {
+    background-color: $colorNegro !important;
+}
+.navbar-toggler {
+    background-color: white;
+}
+.offcanvas{
+    background-color: $colorNegro;
+}
+h5{
+    color: rgb(255, 255, 255);
+}
+.navbar-light .navbar-nav .nav-link{
+    color: rgb(255, 253, 253)!important}
+
+.btn-close{
+    background-color: rgb(255, 255, 255);
+}
+.dropdown-menu {
+    background-color: $colorNegro;
+}
+.dropdown-item{
+    color: rgb(255, 255, 255);
+}
+.card-header, div.card-body{
+    background-color: $colorNegro;
+}
+.dondeEncontrarnos__p--nombre, .dondeEncontrarnos__p--texto{
+    color: $colorNegro!important;
+    text-shadow: 1.3px 1.3px 2.6px #000000;
+    font-size: 1.8rem;
+}
+.dondeEncontrarnos__li--horarios{
+    color: rgb(255, 255, 255);
+}
+.colorDirecc{
+    color: blueviolet;
+    font-size: 2.4rem;
+}
+.colorDes,.colorDes1{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 2rem;
+}
+.colorDes{
+    text-decoration:line-through;
+}

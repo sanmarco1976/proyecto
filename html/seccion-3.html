@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="icon"   href="../imagen/logo.jpeg">
+    <title>Local 16</title>
+    <meta name="description" content="este es el sitio web del Local 16, ubicado en la calle Peron 2450, el cual se encarga de la importacion, de la venta mayorista y la distribucion de una amplia variedad de articulos">
+    <meta name="keywords" content="Local, Categorias, ¿Quienes Somos?, Contactanos, Productos">
+ 
+</head>
+<body id="grilla1">
+  <nav>
+    <nav class="navbar navbar-light bg-light fixed-top"> <!-- navbar hamburguesa -->
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorias
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li class=" cat"><a class=" dropdown-item" href="seccionElect.html">Electrónica</a></li>
+                  <li class=" cat "><a class=" dropdown-item" href="seccionIlu.html">Iluminación</a></li>
+                  <li class=" cat "><a class=" dropdown-item" href="seccionHYD.html">Hogar y Decoración</a></li>
+                  <li class=" cat "><a class=" dropdown-item" href="seccionSeg.html">Seguridad</a></li>
+                  <li class=" cat "><a class=" dropdown-item" href="seccionBelle.html">Belleza</a></li>
+                  <li class=" cat "><a class=" dropdown-item" href="seccionAcc.html">Accesorios</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="seccion-3.html">¿Quienes somos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="seccion-1.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="dondeEstamos.html">¿Donde Encontarnos?</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+      <ul class="ulBarra"> <!-- navbar normal -->
+          <li class="barraNavegacionI cat"><a class="cat" href="../index.html">Inicio</a></li>
+          <li class="barraNavegacionI cat"><a class="cat" href="../index.html">Categorias</a></li> 
+          <li class="barraNavegacionQ cat"><a class="cat" href="seccion-3.html">¿Quienes somos?</a></li>
+          <li class="barraNavegacionCa cat"><a class="cat" href="seccion-1.html">Contacto</a></li>
+          <li class="barraNavegacionD cat"><a class="cat" href="dondeEstamos.html">¿Donde Encontarnos?</a></li>
+      </ul>
+  </nav>
+    <div id="quienesSomosDiv"> <!-- quienes somos -->
+        <a href="../index.html"><img class="logo-s3" src="../imagen/logo.jpeg"></a>
+        <div class="accordion accordion-flush" id="accordionFlushExample quienesSomos ">
+          <div class="accordion-item aI1">
+            <h2 class="accordion-header" id="flush-headingOne"> <!-- info -->
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Información
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Importación, venta mayorista y distribución de una amplia variedad de artículos de electrónica, cartelería, iluminación, seguridad, hogar y deco, Navidad y belleza, entre otros.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo"> <!-- stock -->
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Stock
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Contamos con un stock permanente garantizado, lo que nos permite rapidez en nuestras entregas.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo"> <!-- medios contacto (falta completar) -->
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Medios Para Contactarnos
+              </button>
+            </h2>
+          
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul >
+                  <li >Whatsapp 11-6020 4810</li>
+                  <li >Instagram </li>
+                  <li>Mail peron2450local16@gmail.com</li>
+                  <li >Facebook </li>
+                  <li>Twitter</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <footer>
+      <div class="footer"> <!-- footer -->
+        <div class="card text-white bg-dark mb-3 footer__Compra" style="max-width: 18rem;">
+          <div class="card-header">COMPRA MÍNIMA</div> <!-- compra minima -->
+          <div class="card-body">
+            <h5 class="card-title">$ 9.000</h5>
+            <p class="card-text">Comprá cualquier producto de cualquier categoría y te lo enviamos.</p>
+          </div>
+        </div>
+        <div class="card text-white bg-dark mb-3 footer__Segura" style="max-width: 18rem;">
+          <div class="card-header">COMPRA SEGURA</div> <!-- compra segura -->
+          <div class="card-body">
+            <h5 class="card-title">Rápida y sencilla</h5>
+            <p class="card-text">Contamos con los métodos de pago más seguros del mercado.</p>
+          </div>
+        </div>
+        <div class="card text-white bg-dark mb-3 footer__envios" style="max-width: 18rem;">
+          <div class="card-header">ENVÍOS A TODO EL PAÍS</div> <!-- envios al pais -->
+          <div class="card-body">
+            <h5 class="card-title">Llegamos a todas partes</h5>
+            <p class="card-text">Despachamos tu compra a la dirección que indiques por el servicio que quieras.</p>
+          </div>
+        </div>
+        <div class="card text-white bg-dark mb-3 footer__wpp" style="max-width: 18rem;">
+          <div class="card-header">COMUNICATE POR WHATSAPP</div> <!-- wpp -->
+          <div class="card-body">
+            <h5 class="card-title">¿Necesitás ayuda?</h5>
+            <p class="card-text">Escribinos para que podamos brindarte la información que buscás</p>
+          </div>
+        </div>
+        <div class="footer__info">
+          <a href="../index.html"><img class="footer__logo" src="../imagen/logo.jpeg"></a>
+        </div>
+      </div>
+      <hr>
+      Copyright &copy; local 16. Todos los derechos reservados
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

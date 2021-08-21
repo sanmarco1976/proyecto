@@ -1,0 +1,306 @@
+@import "variables";
+@import "colores";
+@import "tipografia";
+@import "imagenes";
+@import "bem";
+@import "operaciones";
+
+
+#grilla, #grilla1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:auto;
+    grid-template-areas:
+        "nav"
+        "header"
+        "body"
+        "footer";
+
+    header{      
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "logo h1";
+        justify-items: stretch;
+        align-items: stretch;
+        grid-area: header;
+        margin-top: -1rem;
+        h1{
+            grid-area: h1;
+        }
+        .header__logo{
+            grid-area: logo;
+        }
+    }
+    /* barra de navegacion */
+    nav{
+        height: 4rem;
+        grid-area: nav;
+        margin-bottom: 1rem;
+    
+        /* li */
+        .barraNavegacionC, .barraNavegacionI, .barraNavegacionQ, .barraNavegacionCa, .barraNavegacionD{
+            line-height: 1.7;
+            display: inline-block;
+            padding: 1rem;
+            position: relative;
+            margin: 0rem;
+            width: 90%;
+            font-size: 1.3rem;
+            text-align: left;
+        }
+        /* ul de categorias */
+        .ulCategorias{
+            z-index: 1000000;
+        }
+        /* ul de toda la barra */
+        .ulBarra{
+            padding: 0rem;
+            margin: 0rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
+            width: 100%;
+        }
+        .ulBarra .ulCategorias{
+            position: absolute;
+            display: none;
+        }
+        .ulBarra .barraNavegacionC:hover .ulCategorias{
+            display: block;
+        }
+        /* a de categorias */
+        .cat{
+            line-height: 1.7;
+            text-decoration: none;
+            list-style: none;
+        }
+    }
+    .navbar{
+        grid-area: nav;
+    }
+    
+    #imgPrecPrin{
+        margin-top: $margin1rem;
+        margin-bottom: $margin1rem;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "a1";
+        gap: 1rem;
+        justify-items: center;
+        align-items: center;
+        grid-area: body;
+        border-radius: 3rem;
+    }
+    .w-100{
+        width: auto!important;
+    }
+    /* div */
+    .prodPagPrin1, .prodPagPrin2, .prodPagPrin3, .prodPagPrin4, .prodPagPrin5, .prodPagPrin6, .prodPagPrin7, .prodPagPrin8{
+        justify-self: center;
+        align-self: center;
+        margin-top: $margin1rem;
+        margin-bottom: $margin1rem;
+        grid-area: a1;
+    }
+    /* img */
+    .imgPagPrincipal{
+        margin-top: $margin1rem;
+        margin-bottom: $margin1rem;
+    }
+    footer{
+        grid-area: footer;
+    }
+    .footer{
+        display: grid;
+        margin-top: $margin1rem;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "info compra envios segura wpp";
+        
+    }
+    .footer__Compra{
+        grid-area: compra;
+    }
+    .footer__envios{
+        grid-area: envios;
+    }
+    .footer__wpp{
+        grid-area: wpp;
+    }
+    .footer__Segura{
+        grid-area: segura;
+    }
+    .footer__info{
+        grid-area: info;
+    }
+    .form{
+        display: grid;
+        grid-area: body;
+        margin-bottom: $margin1rem;
+    }
+    form{
+        @include display;
+        grid-template-areas: 
+        "h2"
+        "formulario";
+    }
+    /* ol */
+    .formularioForm{
+        grid-area: formulario;
+    }
+    /* h2 del formulario */
+    h2{
+        margin-left: 1.2rem;
+        grid-area: h2;
+    }
+    input, select, option{
+        border: 1rem;
+    }
+    /* seccion 3 */
+    #quienesSomosDiv{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas: 
+            "img p";
+        gap: 1rem 1rem;
+        margin-bottom: $margin1rem;
+        grid-area: body;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+    /* p */
+    .quienesSomos{
+        word-spacing: 0.7rem;
+        grid-area: p;
+        justify-self: stretch;
+        align-self: stretch;
+        margin: $margin1rem;
+    }
+    /* img */
+    .logo-s3{
+        grid-area: img;
+        margin: $margin1rem;
+    }
+    /* div de las categorias */
+    .bodyCate{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: auto ;
+        grid-template-areas:
+        "b1 b2 b3"
+        "b4 b5 b6";
+        grid-column-gap: 3rem;
+        grid-row-gap: 3rem;
+        grid-area: body;
+        margin: $margin1rem;
+    }
+    /* section de cada producto */
+    #secCate{
+        justify-items: stretch;
+        align-items: stretch;
+        overflow: auto;
+        border-radius: 1rem;
+        margin-bottom: $margin1rem;
+    }
+    .divCate1{
+        grid-area: b1;
+    }
+    .divCate1{
+        justify-self: center;
+        align-self: center;
+        display:grid;
+        grid-template-areas:
+        "img nom"
+        "des des";
+        margin: $margin1rem;
+    }
+    .divCate1__pCate{
+        grid-area:nom;
+        align-self: center;
+    }
+    .divCate1__imgCate{
+        margin-top: $margin1rem;
+        margin-bottom: $margin1rem;
+        grid-area: img;
+    }
+    .descripcion{
+        text-transform: capitalize;
+        grid-area: des;
+    }
+    .bodyPrin{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        grid-template-areas:
+        "im1 im2 lp"
+        "im3 im4 lp1";
+        #secCate--2{
+            grid-area: im1;
+            @extend #secCate
+        }
+        #secCate--21{
+            grid-area: im2;
+            @extend #secCate
+        }
+        #secCate--22{
+            grid-area: im3;
+            @extend #secCate
+        }
+        #secCate--23{
+            grid-area: im4;
+            @extend #secCate
+        }
+        #secCate--3{
+            grid-area: lp;
+            @extend #secCate
+        }
+        #secCate--31{
+            grid-area: lp1;
+            @extend #secCate
+        }
+    }
+    .aI1{
+        margin-top: $margin1rem;
+    }
+    .navbar.navbar-light.bg-light.fixed-top{
+        margin-bottom: 0rem;
+    }
+    .dondeEstamos{
+        grid-area: body;
+        .dondeEncontrarnos{
+            display: grid;
+            grid-template-columns: auto auto ;
+            grid-template-rows: auto ;
+            grid-template-areas: 
+            "info info"
+            "mapa horarios";
+            margin: $margin1rem;
+            margin-left: 7rem;
+            margin-bottom: 15rem;
+            .dondeEncontrarnos__p{
+                grid-area: info;
+                display: grid;
+                grid-template-areas: "texto";
+                .dondeEncontrarnos__p--texto{
+                    grid-area: texto;
+                }
+            }
+            .dondeEncontrarnos__ul{
+                grid-area: horarios;
+                .dondeEncontrarnos__li--horarios{
+                    margin: $margin1rem;
+                }
+            }
+            
+            .dondeEncontrarnos__mapa{
+                grid-area: mapa;
+            }
+        }
+    }
+    
+}
+
+@import "responsive";

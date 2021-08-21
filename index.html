@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="icon"   href="imagen/logo.jpeg">
+    <title>Local 16</title>
+    <meta name="description" content="este es el sitio web del Local 16, ubicado en la calle Peron 2450, el cual se encarga de la importacion, de la venta mayorista y la distribucion de una amplia variedad de articulos">
+    <meta name="keywords" content="Local, Categorias, ¿Quienes Somos?, Contactanos, Productos">
+
+</head>
+<body id="grilla">
+    <header class="header"> <!-- arranca el header -->
+        <a href="index.html"><img class="header__logo" src="imagen/logo.jpeg" href="index.html"></a>
+        <h1 class="animate__animated animate__fadeInDown container">local 16</h1>
+    </header> 
+    <nav > <!-- arranca navbar hamburguesa -->
+      <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title navBarh5" id="offcanvasNavbarLabel">Local 16</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categorias
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li class=" cat"><a class=" dropdown-item" href="html/seccionElect.html">Electrónica</a></li>
+                    <li class=" cat "><a class=" dropdown-item" href="html/seccionIlu.html">Iluminación</a></li>
+                    <li class=" cat "><a class=" dropdown-item" href="html/seccionHYD.html">Hogar y Decoración</a></li>
+                    <li class=" cat "><a class=" dropdown-item" href="html/seccionSeg.html">Seguridad</a></li>
+                    <li class=" cat "><a class=" dropdown-item" href="html/seccionBelle.html">Belleza</a></li>
+                    <li class=" cat "><a class=" dropdown-item" href="html/seccionAcc.html">Accesorios</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="html/seccion-3.html">¿Quienes somos?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="html/seccion-1.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="html/seccion-1.html">¿Donde Encontarnos?</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <ul class="ulBarra"> <!-- arranca navbar normal -->
+          <li class="barraNavegacionI nav-item cat"><a  class="cat" href="index.html">Inicio</a></li>
+          <li class="barraNavegacionC nav-item cat">Categorias
+            <section>   
+                <ul class="ulCategorias">
+                    <li class=" cat cat--Cate"><a class="cat" href="html/seccionElect.html">Electrónica</a></li>
+                    <li class=" cat cat--Cate"><a class="cat" href="html/seccionIlu.html">Iluminación</a></li>
+                    <li class=" cat cat--Cate"><a class="cat" href="html/seccionHYD.html">Hogar y Decoración</a></li>
+                    <li class=" cat cat--Cate"><a class="cat" href="html/seccionSeg.html">Seguridad</a></li>
+                    <li class=" cat cat--Cate"><a class="cat" href="html/seccionBelle.html">Belleza</a></li>
+                    <li class=" cat cat--Cate"><a class="cat" href="html/seccionAcc.html">Accesorios</a></li>
+                </ul>
+            </section> </li> 
+          <li class="barraNavegacionQ nav-item cat"><a class="cat" href="html/seccion-3.html">¿Quienes somos?</a></li>
+          <li class="barraNavegacionCa nav-item cat"><a class="cat" href="html/seccion-1.html">Contacto</a></li>
+          <li class="barraNavegacionD nav-item cat"><a class="cat" href="html/dondeEstamos.html">¿Donde Encontarnos?</a></li>
+      </ul>
+    </nav>
+    <section id="imgPrecPrin"> <!-- carrusel -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner container">
+              <div class="carousel-item active">
+                <img src="imagen/aroSelfieCelu.jpg" class="d-block w-100 imgPagPrincipal">
+              </div>
+              <div class="carousel-item">
+                <img src="imagen/camara.jpeg" class="d-block w-100 imgPagPrincipal">
+              </div>
+              <div class="carousel-item">
+                <img src="imagen/camaraIPWifi.jpeg" class="d-block w-100 imgPagPrincipal" >
+              </div>
+              <div class="carousel-item">
+                <img src="imagen/cartel1Metro.jpg" class="d-block w-100 imgPagPrincipal" >
+              </div>
+              <div class="carousel-item">
+                <img src="imagen/i12.jpg" class="d-block w-100 imgPagPrincipal" >
+              </div>
+              <div class="carousel-item">
+                <img src="imagen/p47.jpeg" class="d-block w-100 imgPagPrincipal" >
+              </div>
+              <div class="carousel-item">
+                <img src="imagen/consola.jpeg" class="d-block w-100 imgPagPrincipal" >
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button> 
+      </div>
+      <h3>productos destacados</h3>
+      <div class="bodyPrin"> <!-- productos destacados del mes -->
+        <section id="secCate--2">
+          <div class="divCate1">    
+              <a href="html/seccionBelle.html"><img src="imagen/patillera.jpeg" class="divCate1__imgCate"></a>
+              <p class="divCate1__pCate">Patillera Profesional</p>
+              <ul>
+                  <li class="descripcion">Patillera profesional tipo VINTAGE.</li>
+                  <li class="descripcion">Incluye accesorios.</li>
+                  <li class="descripcion">Recargable.</li>
+              </ul>
+          </div>
+        </section>
+        <section id="secCate--21">
+          <div class="divCate1">    
+              <a href="html/seccionElect.html"><img src="imagen/consola.jpeg" class="divCate1__imgCate" ></a>
+              <p class="divCate1__pCate">consola</p>
+              <ul>
+                  <li class="descripcion">Consola retro.</li>
+                  <li class="descripcion">Cargador 220v, cable USB, cable AV.</li>
+                  <li class="descripcion">incluye 620 juegos.</li>
+                  <li class="descripcion">Dos controles.</li>
+              </ul>
+          </div>
+        </section>
+        <section id="secCate--22">
+          <div class="divCate1">    
+            <a href="html/seccionIlu.html"><img src="imagen/tiraRGB.jpeg" class="divCate1__imgCate"></a>
+            <p class="divCate1__pCate">TRGB tira de LED rgb 5050</p>
+            <ul>
+                <li class="descripcion">Tira de LED rgb siliconada.</li>
+                <li class="descripcion">Largo 5 mts.</li>
+                <li class="descripcion">Control remoto.</li>
+                <li class="descripcion">Se pueden realizar secuencias de encendido y variación de colores.</li>
+                <li class="descripcion">Alimentación 220v.</li>
+
+            </ul>
+          </div>
+        </section>
+        <section id="secCate--23">
+          <div class="divCate1">   
+            <a href="html/seccionHYD.html"><img src="imagen/mopa.jpeg" class="divCate1__imgCate" ></a>
+            <p class="divCate1__pCate">Mopa balde trapeador</p>
+            <ul>
+                <li class="descripcion">Mopa, balde trapeador.</li>
+                <li class="descripcion">Balde con centrifugadora de Acero Inoxidable.</li>
+                <li class="descripcion">Ruedas incluidas para mejor desplazamiento.</li>
+                <li class="descripcion">Palo giratorio con Paño de Microfibra listo para usar.</li>
+                <li class="descripcion">2 Mopas de Microfibra en total.</li>
+            </ul>
+          </div> 
+        </section>
+      </div>
+      <h3>productos en oferta</h3>
+      <div class="bodyPrin"> <!-- productos en oferta del mes -->
+        <section id="secCate--2">
+          <div class="divCate1">    
+              <a href="html/seccionAcc.html"><img src="imagen/aroSelfieCelu.jpg" class="divCate1__imgCate"></a>
+              <ul>
+                <li class="descripcion"><span class="colorDes">antes $300</span></li>
+                <li class="descripcion"><span class="colorDes1">despues $190</span></li>
+              </ul>
+          </div>
+        </section>
+        <section id="secCate--21">
+          <div class="divCate1">    
+              <a href="html/seccionElect.html"><img src="imagen/consola.jpeg" class="divCate1__imgCate" ></a>
+              <ul>
+                  <li class="descripcion"><span class="colorDes">antes $2500</span></li>
+                  <li class="descripcion"><span class="colorDes1">despues $2150</span></li>
+              </ul>
+          </div>
+        </section>
+        <section id="secCate--22">
+          <div class="divCate1">    
+            <a href="html/seccionIlu.html"><img src="imagen/tiraRGB.jpeg" class="divCate1__imgCate"></a>
+            <ul>
+              <li class="descripcion"><span class="colorDes">antes $1590</span></li>
+              <li class="descripcion"><span class="colorDes1">despues $1390</span></li>
+            </ul>
+          </div>
+        </section>
+        <section id="secCate--23">
+          <div class="divCate1">   
+            <a href="html/seccionHYD.html"><img src="imagen/mopa.jpeg" class="divCate1__imgCate" ></a>
+            <ul>
+              <li class="descripcion"><span class="colorDes">antes $1650</span></li>
+              <li class="descripcion"><span class="colorDes1">despues $1300</span></li>
+            </ul>
+          </div> 
+        </section>
+        <section id="secCate--3">
+          <div class="divCate1">   
+            <a href="html/seccionSeg.html"><img src="imagen/camaraIPWifi.jpeg" class="divCate1__imgCate" ></a>
+            <ul>
+              <li class="descripcion"><span class="colorDes">antes $3000</span></li>
+              <li class="descripcion"><span class="colorDes1">despues $2500</span></li>
+            </ul>
+          </div> 
+        </section>
+        <section id="secCate--31">
+          <div class="divCate1">   
+            <a href="html/seccionIlu.html"><img src="imagen/lamparaBlue.jpeg" class="divCate1__imgCate" ></a>
+            <ul>
+              <li class="descripcion"><span class="colorDes">antes $600</span></li>
+              <li class="descripcion"><span class="colorDes1">despues $520</span></li>
+            </ul>
+          </div> 
+        </section>
+      </div>
+    </section>
+    <footer>
+      <div class="footer"> <!-- footer -->
+        <div class="card text-white bg-dark mb-3 footer__Compra" style="max-width: 18rem;">
+          <div class="card-header">COMPRA MÍNIMA</div> <!-- compra minima -->
+          <div class="card-body">
+            <h5 class="card-title">$ 9.000</h5>
+            <p class="card-text">Comprá cualquier producto de cualquier categoría y te lo enviamos.</p>
+          </div>
+        </div>
+        <div class="card text-white bg-dark mb-3 footer__Segura" style="max-width: 18rem;">
+          <div class="card-header">COMPRA SEGURA</div> <!-- compra segura -->
+          <div class="card-body">
+            <h5 class="card-title">Rápida y sencilla</h5>
+            <p class="card-text">Contamos con los métodos de pago más seguros del mercado.</p>
+          </div>
+        </div>
+        <div class="card text-white bg-dark mb-3 footer__envios" style="max-width: 18rem;">
+          <div class="card-header">ENVÍOS A TODO EL PAÍS</div> <!-- envios -->
+          <div class="card-body">
+            <h5 class="card-title">Llegamos a todas partes</h5>
+            <p class="card-text">Despachamos tu compra a la dirección que indiques por el servicio que quieras.</p>
+          </div>
+        </div>
+        <div class="card text-white bg-dark mb-3 footer__wpp" style="max-width: 18rem;">
+          <div class="card-header">COMUNICATE POR WHATSAPP</div> <!-- wpp -->
+          <div class="card-body">
+            <h5 class="card-title">¿Necesitás ayuda?</h5>
+            <p class="card-text">Escribinos para que podamos brindarte la información que buscás</p>
+          </div>
+        </div>
+        <div class="footer__info">
+          <a href="index.html"><img class="footer__logo" src="imagen/logo.jpeg"></a>
+        </div>
+      </div>
+      <hr>
+      Copyright &copy; local 16. Todos los derechos reservados
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+</body>
+</html>

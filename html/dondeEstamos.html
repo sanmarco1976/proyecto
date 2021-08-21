@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon"   href="../imagen/logo.jpeg">
+    <title>Local 16</title>
+    <meta name="description" content="este es el sitio web del Local 16, ubicado en la calle Peron 2450, el cual se encarga de la importacion, de la venta mayorista y la distribucion de una amplia variedad de articulos">
+    <meta name="keywords" content="Local, Categorias, ¿Quienes Somos?, Contactanos, Productos">
+
+</head>
+<body id="grilla1">
+    <nav> <!-- navbar hamburguesa -->
+      <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categorias
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li class=" cat"><a class=" dropdown-item" href="seccionElect.html">Electrónica</a></li>
+                    <li class=" cat "><a class=" dropdown-item" href="seccionIlu.html">Iluminación</a></li>
+                    <li class=" cat "><a class=" dropdown-item" href="seccionHYD.html">Hogar y Decoración</a></li>
+                    <li class=" cat "><a class=" dropdown-item" href="seccionSeg.html">Seguridad</a></li>
+                    <li class=" cat "><a class=" dropdown-item" href="seccionBelle.html">Belleza</a></li>
+                    <li class=" cat "><a class=" dropdown-item" href="seccionAcc.html">Accesorios</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="seccion-3.html">¿Quienes somos?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="seccion-1.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dondeEstamos.html">¿Donde Encontarnos?</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+        <ul class="ulBarra"> <!-- navbar normal -->
+            <li class="barraNavegacionI cat"><a class="cat" href="../index.html">Inicio</a></li>
+            <li class="barraNavegacionI cat"><a class="cat" href="../index.html">Categorias</a></li> 
+            <li class="barraNavegacionQ cat"><a class="cat" href="seccion-3.html">¿Quienes somos?</a></li>
+            <li class="barraNavegacionCa cat"><a class="cat" href="seccion-1.html">Contacto</a></li>
+            <li class="barraNavegacionD cat"><a class="cat" href="dondeEstamos.html">¿Donde Encontarnos?</a></li>
+        </ul>
+    </nav>
+    <section class="dondeEstamos"> <!-- seccion donde estamos  -->
+        <section class="dondeEncontrarnos"> <!-- peron -->
+            <iframe class="dondeEncontrarnos__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1161.0243776332134!2d-58.40137488698274!3d-34.607376800348284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaec184ac789%3A0x817b4311b2be020e!2sLOCAL%2016!5e0!3m2!1ses!2sar!4v1629408388709!5m2!1ses!2sar" allowfullscreen="" loading="lazy"></iframe>
+            <div class="dondeEncontrarnos__p" >
+                <p class="dondeEncontrarnos__p--texto">el local se encuentra en la calle <span class="colorDirecc">Gral. juan domingo Peron 2450</span>, entre las calles larrea y azcuénaga.</p>
+            </div>
+            <ul class="dondeEncontrarnos__ul">
+                <div class="btn-group dropend">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    HORARIOS
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dondeEncontrarnos__li--horarios">horarios de atencion</li>
+                        <li class="dondeEncontrarnos__li--horarios">lunes 09:00–17:00</li>
+                        <li class="dondeEncontrarnos__li--horarios">martes 09:00–17:00</li>
+                        <li class="dondeEncontrarnos__li--horarios">miércoles 09:00–17:00</li>
+                        <li class="dondeEncontrarnos__li--horarios">jueves 09:00–17:00</li>
+                        <li class="dondeEncontrarnos__li--horarios">viernes 09:00–17:00</li>
+                        <li class="dondeEncontrarnos__li--horarios">sábado 09:00–13:00</li>
+                        <li class="dondeEncontrarnos__li--horarios">domingo Cerrado</li>
+                    </ul>
+                </div>
+            </ul>
+        </section>
+    
+    
+        <section class="dondeEncontrarnos"> <!-- castelli -->
+            <iframe class="dondeEncontrarnos__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.92426177775!2d-58.40574034171496!3d-34.60799168750243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaedea5622e5%3A0xf54767639d322bcc!2sCastelli%20165%2C%20C1031AAC%20CABA!5e0!3m2!1ses!2sar!4v1629496735467!5m2!1ses!2sar" allowfullscreen="" loading="lazy"></iframe>
+            <div class="dondeEncontrarnos__p" >
+                <p class="dondeEncontrarnos__p--texto">el local se encuentra en la calle <span class="colorDirecc">castelli 165</span>, entre las calles Tte. Gral. juan domingo Peron y bartolomé mitre.</p>
+            </div>
+            <ul class="dondeEncontrarnos__ul">
+                <div class="btn-group dropend">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    HORARIOS
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dondeEncontrarnos__li--horarios">horarios de atencion</li>
+                        <li class="dondeEncontrarnos__li--horarios">lunes 09:00–17:00</li>
+                        <li class="dondeEncontrarnos__li--horarios">martes 09:00–17:00</li>
+                        <li class="dondeEncontrarnos__li--horarios">miércoles 09:00–17:00</li>
+                        <li class="dondeEncontrarnos__li--horarios">jueves 09:00–17:00</li>
+                        <li class="dondeEncontrarnos__li--horarios">viernes 09:00–17:00</li>
+                        <li class="dondeEncontrarnos__li--horarios">sábado 09:00–13:00</li>
+                        <li class="dondeEncontrarnos__li--horarios">domingo Cerrado</li>
+                    </ul>
+                </div>
+            </ul>
+        </section>
+    </section>
+    <footer>
+      <div class="footer"> <!-- footer -->
+        <div class="card text-white bg-dark mb-3 footer__Compra" style="max-width: 18rem;"> <!-- compra minima -->
+          <div class="card-header">COMPRA MÍNIMA</div>
+          <div class="card-body">
+            <h5 class="card-title">$ 9.000</h5>
+            <p class="card-text">Comprá cualquier producto de cualquier categoría y te lo enviamos.</p>
+          </div>
+        </div>
+        <div class="card text-white bg-dark mb-3 footer__Segura" style="max-width: 18rem;"> <!-- compra segura -->
+          <div class="card-header">COMPRA SEGURA</div>
+          <div class="card-body">
+            <h5 class="card-title">Rápida y sencilla</h5>
+            <p class="card-text">Contamos con los métodos de pago más seguros del mercado.</p>
+          </div>
+        </div>
+        <div class="card text-white bg-dark mb-3 footer__envios" style="max-width: 18rem;">
+          <div class="card-header">ENVÍOS A TODO EL PAÍS</div> <!-- envios -->
+          <div class="card-body">
+            <h5 class="card-title">Llegamos a todas partes</h5>
+            <p class="card-text">Despachamos tu compra a la dirección que indiques por el servicio que quieras.</p>
+          </div>
+        </div>
+        <div class="card text-white bg-dark mb-3 footer__wpp" style="max-width: 18rem;">
+          <div class="card-header">COMUNICATE POR WHATSAPP</div> <!-- consultas -->
+          <div class="card-body">
+            <h5 class="card-title">¿Necesitás ayuda?</h5>
+            <p class="card-text">Escribinos para que podamos brindarte la información que buscás</p>
+          </div>
+        </div>
+        <div class="footer__info"> 
+          <a href="../index.html"><img class="footer__logo" src="../imagen/logo.jpeg"></a>
+        </div>
+      </div>
+      <hr>
+      Copyright &copy; local 16. Todos los derechos reservados
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

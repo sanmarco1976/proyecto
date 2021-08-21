@@ -1,0 +1,15 @@
+.cat--Cate{ 
+    margin-left: -2rem;
+}
+.divCate1--divCate2,.divCate1--divCate3, .divCate1--divCate4, .divCate1--divCate5, .divCate1--divCate6{
+   @extend .divCate1
+}
+.divCate1--divCate2{
+    grid-area: b2;
+}
+.divCate1--divCate3{
+    grid-area: b3;
+}
+
+
+  
