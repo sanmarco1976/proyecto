@@ -422,6 +422,8 @@ footer {
     grid-template-areas: "nav" "header" "body  " "footer "; }
     #grilla nav {
       height: 100%; }
+    #grilla .bodyPrin {
+      grid-template-areas: "im1 im2 lp" "im3 im4 lp1" "lp2 lp3 none"; }
   .header {
     grid-template-columns: 1fr 3fr; }
     .header h1 {
@@ -441,6 +443,10 @@ footer {
     margin-left: 0rem;
     width: 12rem;
     height: 12rem; } }
+
+@media only screen and (max-width: 1024px) {
+  #grilla .bodyPrin {
+    grid-template-areas: "im1 im2" "im3 im4" "lp lp1" "lp2 lp3"; } }
 
 /* responsive para medidas maximas 768px */
 @media only screen and (max-width: 768px) {
@@ -467,6 +473,8 @@ footer {
         width: 35rem !important; }
     #grilla .footer {
       grid-template-areas: "info none" "compra envios" "segura wpp"; }
+    #grilla .bodyPrin {
+      grid-template-areas: "im1 im2" "im3 im4" "lp lp1" "lp2 lp3"; }
   #grilla1 {
     grid-template-areas: "nav" "body" "footer"; }
     #grilla1 nav {
@@ -580,7 +588,7 @@ footer {
       display: flex; }
     #grilla .bodyPrin {
       grid-template-columns: 1fr;
-      grid-template-areas: "im1" "im2" "im3" "im4" "lp" "lp1"; }
+      grid-template-areas: "im1" "im2" "im3" "im4" "lp" "lp1" "lp2" "lp3"; }
     #grilla .colorDes, #grilla .colorDes1 {
       font-size: 1.4rem; }
   #grilla1 nav {

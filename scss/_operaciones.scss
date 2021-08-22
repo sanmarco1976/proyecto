@@ -31,3 +31,51 @@ $medida:chico;
     grid-template-areas: 
         "logo h1";
 }
+@mixin medida1444{
+    #grilla{
+        grid-template-columns: auto;
+        grid-template-areas:
+        "nav"
+        "header"
+        "body  "
+        "footer ";
+        nav{
+            height: 100%;
+            
+        }
+
+    }
+    .header{
+        grid-template-columns: 1fr 3fr;   
+        h1{
+            font-size: 1.5rem;
+
+        }
+        .header__logo{
+            width: 5.4rem;
+            height: 5.4rem;
+        }
+    }
+    #grilla1{
+        .divCate1, .divCate1--divCate2, .divCate1--divCate3{
+            grid-template-areas: 
+            "nom"
+            "img"
+            "des";
+        }
+    }
+    
+    .descripcion{
+        margin-bottom: 0.4rem;
+        margin-left: 0.3rem;
+    }
+    .quienesSomos{
+       margin-left: 0rem;
+       margin-right: 0rem;
+    }
+    .logo-s3{
+        margin-left: 0rem;
+        width: 12rem;
+        height: 12rem;
+    }
+}

@@ -17,6 +17,13 @@
             height: 100%;
             
         }
+        .bodyPrin{
+
+            grid-template-areas: 
+            "im1 im2 lp"
+            "im3 im4 lp1"
+            "lp2 lp3 none";
+        }
 
     }
     .header{
@@ -30,6 +37,7 @@
             height: 5.4rem;
         }
     }
+
     #grilla1{
         .divCate1, .divCate1--divCate2, .divCate1--divCate3{
             grid-template-areas: 
@@ -51,6 +59,17 @@
         margin-left: 0rem;
         width: 12rem;
         height: 12rem;
+    }
+}
+@media only screen and (max-width: 1024px){
+    #grilla{
+        .bodyPrin{
+            grid-template-areas: 
+            "im1 im2"
+            "im3 im4"
+            "lp lp1"
+            "lp2 lp3";
+        }
     }
 }
 
@@ -97,6 +116,13 @@
             "compra envios"
             "segura wpp"
           
+        }
+        .bodyPrin{
+            grid-template-areas: 
+            "im1 im2"
+            "im3 im4"
+            "lp lp1"
+            "lp2 lp3";
         }
         
     }
@@ -290,7 +316,9 @@
             "im3"
             "im4"
             "lp"
-            "lp1";
+            "lp1"
+            "lp2"
+            "lp3";
         }
         .colorDes,.colorDes1{
             font-size: 1.4rem;
