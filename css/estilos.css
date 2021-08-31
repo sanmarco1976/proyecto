@@ -25,7 +25,7 @@ body#grilla, body#grilla1 {
 .offcanvas {
   background-color: #0D0D0D; }
 
-h5 {
+h5, .lista__a {
   color: white; }
 
 .navbar-light .navbar-nav .nav-link {
@@ -44,12 +44,15 @@ h5 {
   background-color: #0D0D0D; }
 
 .dondeEncontrarnos__p--nombre, .dondeEncontrarnos__p--texto {
-  color: #0D0D0D !important;
+  color: white !important;
   text-shadow: 1.3px 1.3px 2.6px #000000;
   font-size: 1.8rem; }
 
 .dondeEncontrarnos__li--horarios {
   color: white; }
+
+.dondeEstamos {
+  background-color: #43736A; }
 
 .colorDirecc {
   color: blueviolet;
@@ -62,6 +65,10 @@ h5 {
 
 .colorDes {
   text-decoration: line-through; }
+
+.accordion-button, .accordion-item {
+  background-color: #0D0D0D;
+  color: white; }
 
 html {
   font-family: 'Open Sans', sans-serif; }
@@ -88,9 +95,7 @@ footer {
   word-spacing: 0.3rem; }
 
 .quienesSomos {
-  font-size: 1rem;
-  font-weight: bold;
-  font-style: italic; }
+  font-size: 1rem; }
 
 .footer__mediosPago, .footer__envios {
   font-size: 0.9rem; }
@@ -112,8 +117,8 @@ p {
   text-transform: capitalize; }
 
 h3 {
+  text-shadow: 1.3px 1.3px 2.6px #ff75f8;
   text-transform: uppercase;
-  text-decoration: underline;
   font-size: 3rem; }
 
 header .header__logo {
@@ -133,16 +138,17 @@ header .header__logo {
   border-radius: 2rem; }
 
 .footer__logo {
-  width: 6rem;
-  height: 6rem; }
+  width: 9rem;
+  height: 9rem;
+  border-radius: 3rem; }
 
 .imgPagPrincipal {
   height: 40rem;
   border-radius: 1rem;
   border: solid black 0.1rem; }
 
-body#grilla1 #secCate:hover, #grilla .bodyPrin body#grilla1 #secCate--2:hover, body#grilla1 .bodyPrin #secCate--2:hover, #grilla .bodyPrin body#grilla1 #secCate--21:hover, body#grilla1 .bodyPrin #secCate--21:hover, #grilla .bodyPrin body#grilla1 #secCate--22:hover, body#grilla1 .bodyPrin #secCate--22:hover, #grilla .bodyPrin body#grilla1 #secCate--23:hover, body#grilla1 .bodyPrin #secCate--23:hover, #grilla .bodyPrin body#grilla1 #secCate--3:hover, body#grilla1 .bodyPrin #secCate--3:hover, #grilla .bodyPrin body#grilla1 #secCate--31:hover, body#grilla1 .bodyPrin #secCate--31:hover, #grilla .bodyPrin body#grilla1 #secCate--32:hover, body#grilla1 .bodyPrin #secCate--32:hover, #grilla .bodyPrin body#grilla1 #secCate--33:hover, body#grilla1 .bodyPrin #secCate--33:hover {
-  transform: scale(1.1, 1.1); }
+#secCate:hover, #grilla .bodyPrin #secCate--2:hover, #grilla1 .bodyPrin #secCate--2:hover, #grilla .bodyPrin #secCate--21:hover, #grilla1 .bodyPrin #secCate--21:hover, #grilla .bodyPrin #secCate--22:hover, #grilla1 .bodyPrin #secCate--22:hover, #grilla .bodyPrin #secCate--23:hover, #grilla1 .bodyPrin #secCate--23:hover, #grilla .bodyPrin #secCate--3:hover, #grilla1 .bodyPrin #secCate--3:hover, #grilla .bodyPrin #secCate--31:hover, #grilla1 .bodyPrin #secCate--31:hover, #grilla .bodyPrin #secCate--32:hover, #grilla1 .bodyPrin #secCate--32:hover, #grilla .bodyPrin #secCate--33:hover, #grilla1 .bodyPrin #secCate--33:hover, #secCate--2:hover, #secCate--21:hover, #secCate--22:hover, #secCate--23:hover, #secCate--3:hover, #secCate--31:hover, #secCate--32:hover, #secCate--33:hover {
+  transform: scale(1.03, 1.03); }
 
 .dondeEncontrarnos__mapa {
   width: 100%;
@@ -255,6 +261,9 @@ footer {
       list-style: none; }
   #grilla .navbar, #grilla1 .navbar {
     grid-area: nav; }
+  #grilla .offcanvas-end, #grilla1 .offcanvas-end {
+    width: 85%;
+    height: 80%; }
   #grilla #imgPrecPrin, #grilla1 #imgPrecPrin {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -280,21 +289,27 @@ footer {
     margin-bottom: 1rem; }
   #grilla footer, #grilla1 footer {
     grid-area: footer; }
+  #grilla .fondo, #grilla1 .fondo {
+    position: absolute;
+    bottom: 0px;
+    width: 100%; }
   #grilla .footer, #grilla1 .footer {
     display: grid;
     margin-top: 1rem;
     grid-template-rows: auto;
-    grid-template-areas: "info compra envios segura wpp"; }
-  #grilla .footer__Compra, #grilla1 .footer__Compra {
-    grid-area: compra; }
-  #grilla .footer__envios, #grilla1 .footer__envios {
-    grid-area: envios; }
-  #grilla .footer__wpp, #grilla1 .footer__wpp {
-    grid-area: wpp; }
-  #grilla .footer__Segura, #grilla1 .footer__Segura {
-    grid-area: segura; }
+    grid-template-columns: 1fr 1.3fr 1fr;
+    grid-template-areas: "logo none lista ";
+    align-items: center; }
   #grilla .footer__info, #grilla1 .footer__info {
-    grid-area: info; }
+    grid-area: logo; }
+  #grilla .footer__lista, #grilla1 .footer__lista {
+    grid-area: lista; }
+    #grilla .footer__lista .lista__li, #grilla .footer__lista .lista__a, #grilla1 .footer__lista .lista__li, #grilla1 .footer__lista .lista__a {
+      text-decoration: none;
+      list-style: square; }
+    #grilla .footer__lista .linea, #grilla1 .footer__lista .linea {
+      margin: 0rem;
+      width: auto; }
   #grilla .form, #grilla1 .form {
     display: grid;
     grid-area: body;
@@ -313,8 +328,8 @@ footer {
     border: 1rem; }
   #grilla #quienesSomosDiv, #grilla1 #quienesSomosDiv {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-areas: "img p";
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "img p" "info info";
     gap: 1rem 1rem;
     margin-bottom: 1rem;
     grid-area: body;
@@ -325,7 +340,20 @@ footer {
     grid-area: p;
     justify-self: stretch;
     align-self: stretch;
-    margin: 1rem; }
+    margin-right: 2rem; }
+  #grilla .info, #grilla1 .info {
+    display: grid;
+    grid-area: info;
+    margin-left: 1rem;
+    grid-template-areas: "compra wpp envios segura"; }
+    #grilla .info .info__Compras, #grilla1 .info .info__Compras {
+      grid-area: compra; }
+    #grilla .info .info__wpp, #grilla1 .info .info__wpp {
+      grid-area: wpp; }
+    #grilla .info .info__envios, #grilla1 .info .info__envios {
+      grid-area: envios; }
+    #grilla .info .info__Segura, #grilla1 .info .info__Segura {
+      grid-area: segura; }
   #grilla .logo-s3, #grilla1 .logo-s3 {
     grid-area: img;
     margin: 1rem; }
@@ -471,8 +499,10 @@ footer {
       height: 35rem; }
       #grilla .imgPagPrincipal .w-100 {
         width: 35rem !important; }
-    #grilla .footer {
-      grid-template-areas: "info none" "compra envios" "segura wpp"; }
+    #grilla .fondo {
+      position: auto;
+      bottom: auto;
+      width: 100%; }
     #grilla .bodyPrin {
       grid-template-areas: "im1 im2" "im3 im4" "lp lp1" "lp2 lp3"; }
   #grilla1 {
@@ -500,10 +530,14 @@ footer {
         margin-left: -1rem; }
     #grilla1 #quienesSomosDiv {
       grid-template-columns: auto;
-      grid-template-areas: "img" "p";
+      grid-template-areas: "img" "p" "info";
       gap: 0.8rem; }
-    #grilla1 .footer {
-      grid-template-areas: "info none" "compra envios" "segura wpp"; }
+      #grilla1 #quienesSomosDiv .info {
+        grid-template-areas: "compra wpp" "envios segura"; }
+    #grilla1 .fondo {
+      position: relative;
+      bottom: 0px;
+      width: 100%; }
     #grilla1 .dondeEstamos .dondeEncontrarnos {
       margin-left: 3rem; }
   .precioPrincipal {
@@ -546,11 +580,15 @@ footer {
         width: 20rem !important; }
     #grilla footer {
       grid-column: 1/5; }
+    #grilla .footer {
+      grid-template-columns: 1fr 1fr; }
   #grilla1 nav .cat {
     font-size: 1rem; }
   #grilla1 .formularioForm, #grilla1 .mediosContacto__medios {
     margin-left: -1rem;
-    margin-right: 1rem; } }
+    margin-right: 1rem; }
+  #grilla1 .footer {
+    grid-template-columns: 1fr 1fr; } }
 
 @media only screen and (max-width: 480px) {
   #grilla {
@@ -572,18 +610,16 @@ footer {
       #grilla nav .ulBarra {
         display: none; }
     #grilla #imgPrecPrin {
-      grid-column: 2/5;
-      margin-top: 5rem;
-      margin-left: -5rem; }
+      grid-column: 1/5;
+      margin-top: 5rem; }
     #grilla .imgPagPrincipal {
-      height: 20rem; }
-      #grilla .imgPagPrincipal .w-100 {
-        width: 18rem !important; }
-    #grilla .footer {
-      grid-template-columns: 1fr;
-      grid-template-areas: "info" "compra" "envios" "segura" "wpp"; }
-      #grilla .footer .card-header, #grilla .footer .card-title, #grilla .footer .card-text {
-        font-size: 0.9rem; }
+      height: 20rem;
+      width: 18rem !important; }
+    #grilla .footer .card-header, #grilla .footer .card-title, #grilla .footer .card-text {
+      font-size: 0.9rem; }
+    #grilla .footer .footer__logo {
+      width: 6rem;
+      height: 6rem; }
     #grilla .navbar {
       display: flex; }
     #grilla .bodyPrin {
@@ -610,12 +646,14 @@ footer {
   #grilla1 footer {
     margin-top: 3rem; }
   #grilla1 .footer {
-    grid-template-columns: 1fr;
-    grid-template-areas: "info" "compra" "envios" "segura" "wpp"; }
+    grid-template-columns: 1fr 4fr; }
+    #grilla1 .footer .footer__logo {
+      width: 6rem;
+      height: 6rem; }
     #grilla1 .footer .card-header, #grilla1 .footer .card-title, #grilla1 .footer .card-text {
       font-size: 0.9rem; }
-  #grilla1 #quienesSomosDiv {
-    background-color: #79F2D0 !important; }
+  #grilla1 #quienesSomosDiv .info {
+    grid-template-areas: "compra"  "wpp" "envios" "segura"; }
   #grilla1 .logo-s3 {
     display: none; }
   #grilla1 .dondeEstamos .dondeEncontrarnos {

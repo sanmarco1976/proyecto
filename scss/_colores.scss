@@ -32,7 +32,7 @@ body#grilla, body#grilla1{
 .offcanvas{
     background-color: $colorNegro;
 }
-h5{
+h5, .lista__a{
     color: rgb(255, 255, 255);
 }
 .navbar-light .navbar-nav .nav-link{
@@ -51,12 +51,15 @@ h5{
     background-color: $colorNegro;
 }
 .dondeEncontrarnos__p--nombre, .dondeEncontrarnos__p--texto{
-    color: $colorNegro!important;
+    color: rgb(255, 255, 255)!important;
     text-shadow: 1.3px 1.3px 2.6px #000000;
     font-size: 1.8rem;
 }
 .dondeEncontrarnos__li--horarios{
     color: rgb(255, 255, 255);
+}
+.dondeEstamos{
+    background-color: $colorSec;
 }
 .colorDirecc{
     color: blueviolet;
@@ -69,4 +72,8 @@ h5{
 }
 .colorDes{
     text-decoration:line-through;
+}
+.accordion-button, .accordion-item{
+    background-color: $colorNegro;
+    color: rgb(255, 255, 255);
 }

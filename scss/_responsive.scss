@@ -110,12 +110,10 @@
                 width: 35rem!important;
             }
         }
-        .footer{
-            grid-template-areas: 
-            "info none"
-            "compra envios"
-            "segura wpp"
-          
+        .fondo{
+            position: auto;
+            bottom: auto;
+            width: 100%;
         }
         .bodyPrin{
             grid-template-areas: 
@@ -168,15 +166,20 @@
             grid-template-columns: auto;
             grid-template-areas: 
             "img"
-            "p";
+            "p"
+            "info";
             gap: 0.8rem;
+            .info{
+                grid-template-areas: 
+                    "compra wpp"
+                    "envios segura";
+            }
         }
-        .footer{
-            grid-template-areas: 
-            "info none"
-            "compra envios"
-            "segura wpp"
-          
+        
+        .fondo{
+            position: relative;
+            bottom: 0px;
+            width: 100%;
         }
         .dondeEstamos{
             .dondeEncontrarnos{
@@ -239,6 +242,9 @@
         footer{
             grid-column: 1/5;
         }
+        .footer{
+            grid-template-columns: 1fr 1fr;
+        }
     }
     #grilla1{
         nav{
@@ -250,6 +256,9 @@
         .formularioForm, .mediosContacto__medios{
             margin-left: -1rem;
             margin-right: 1rem;
+        }
+        .footer{
+            grid-template-columns: 1fr 1fr;
         }
     }
 }
@@ -283,26 +292,21 @@
             }
         }
         #imgPrecPrin{
-            grid-column: 2/5;
+            grid-column: 1/5;
             margin-top: 5rem;
-            margin-left: -5rem;
+
         }
         .imgPagPrincipal{
             height: 20rem;
-            .w-100{
-                width: 18rem!important;
-            }
+            width: 18rem!important;
         }
         .footer{
-            grid-template-columns: 1fr;
-            grid-template-areas: 
-            "info"
-            "compra"
-            "envios"
-            "segura"
-            "wpp";
             .card-header, .card-title, .card-text{
                 font-size: 0.9rem;
+            }
+            .footer__logo{
+                width: 6rem;
+                height: 6rem;
             }
         }
         .navbar{
@@ -355,20 +359,25 @@
             margin-top: 3rem;
         }
         .footer{
-        
-            grid-template-columns: 1fr;
-            grid-template-areas: 
-            "info"
-            "compra"
-            "envios"
-            "segura"
-            "wpp";
+            grid-template-columns: 1fr 4fr;
+            .footer__logo{
+                width: 6rem;
+                height: 6rem;
+            }
             .card-header, .card-title, .card-text{
                 font-size: 0.9rem;
             }
         }
         #quienesSomosDiv{
-            background-color: $colorPrinFondo!important;
+            .info{
+                grid-template-areas: 
+                    "compra" 
+                    "wpp"
+                    "envios"
+                    "segura";
+            }
+        
+            
         }
         .logo-s3{
             display: none;

@@ -26,8 +26,7 @@ footer{
 }
 .quienesSomos{
     font-size: 1rem;
-    font-weight: bold;
-    font-style: italic;
+
 }
 .footer__mediosPago, .footer__envios{
     font-size: 0.9rem;
@@ -49,7 +48,7 @@ p{
     text-transform: capitalize;
 }
 h3{
+    text-shadow: 1.3px 1.3px 2.6px #ff75f8;
     text-transform: $textUppercase;
-    text-decoration: underline;
     font-size: 3rem;
 }

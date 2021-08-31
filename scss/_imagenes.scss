@@ -19,16 +19,18 @@ header{
     border-radius: 2rem;
 }
 .footer__logo{
-    width: 6rem;
-    height: 6rem;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 3rem;
 }
 .imgPagPrincipal{
     height: 40rem;
     border-radius: 1rem;
     border: solid black 0.1rem;
 }
-body#grilla1 #secCate:hover{
-    transform: scale(1.1, 1.1);
+
+#secCate:hover, #secCate--2:hover, #secCate--21:hover, #secCate--22:hover, #secCate--23:hover, #secCate--3:hover, #secCate--31:hover, #secCate--32:hover, #secCate--33:hover{
+    transform: scale(1.03, 1.03);
 
 }
 .dondeEncontrarnos__mapa{
