@@ -19,9 +19,6 @@ body#grilla, body#grilla1{
     .cat:hover{
         background-color: $colorPrinFondo;
     }
-    select, option, input{
-        background-color: rgb(197, 201, 206);
-    }
 }
 .bg-light {
     background-color: $colorNegro !important;
@@ -52,8 +49,6 @@ h5, .lista__a{
 }
 .dondeEncontrarnos__p--nombre, .dondeEncontrarnos__p--texto{
     color: rgb(255, 255, 255)!important;
-    text-shadow: 1.3px 1.3px 2.6px #000000;
-    font-size: 1.8rem;
 }
 .dondeEncontrarnos__li--horarios{
     color: rgb(255, 255, 255);
@@ -63,17 +58,16 @@ h5, .lista__a{
 }
 .colorDirecc{
     color: blueviolet;
-    font-size: 2.4rem;
 }
 .colorDes,.colorDes1{
     color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 4px #000000;
-    font-size: 2rem;
 }
-.colorDes{
-    text-decoration:line-through;
-}
+
 .accordion-button, .accordion-item{
     background-color: $colorNegro;
     color: rgb(255, 255, 255);
+}
+.alert-warning{
+    background-color: $colorNegro;
+    border-color: white;
 }

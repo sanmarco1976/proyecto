@@ -71,22 +71,69 @@
     <section class="form"> <!-- formulario de contacto -->
         <form>
             <h2 class="animate__animated animate__fadeInDown">complete el formulario ordenadamente</h2>
-            <ol class="formularioForm">
-                <li class="formularioForm__formulario">Nombre <input class="form-control" name="Nombre"></li>
-                <li class="formularioForm__formulario">Apellido <input class="form-control" name="Apellido"></li>
-                <li class="formularioForm__formulario">E-mail <input class="form-control" name="E-mail"></li>
-                <li class="formularioForm__formulario">Sexo:<form> Hombre<input  type="radio" name="sexo" value="hombre" /> Mujer<input type="radio" name="sexo" value="mujer" /></form></li>
-                <li class="formularioForm__formulario">Forma de Pago <select class="dropdown" name="forma de pago">
-                    <option value="Efectivo">Efectivo</option>
-                    <option value="Trasferencia">Trasferencia</option>
-                    <option value="Mercado Pago">Mercado Pago</option>
-                    </select>
-                </li>
-                <li class="formularioForm__formulario"><div>Comentarios</div><textarea></textarea></li>
-                <input type="submit">
-                <input type="reset">
-            </ol>
+            <div class="formulario">
+              <div class="formulario__hoja">
+                <div class="row">
+                  <div class="col">
+                    <li class="formularioForm__formulario">Nombre</li>
+                    <input type="text" class="form-control__nombre" placeholder="Nombre" aria-label="First name">
+                  </div>
+                  <div class="col">
+                    <li class="formularioForm__formulario">Apellido</li>
+                    <input type="text" class="form-control__apellido" placeholder="Apellido" aria-label="Last name">
+                  </div>
+                </div>
+              
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label formularioForm__formulario">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@gmail.com">
+              </div>
+              <fieldset class="row mb-3">
+                <legend class="col-form-label col-sm-2 pt-0 formularioForm__formulario">Sexo</legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                    <label class="form-check-label formularioForm__formulario" for="gridRadios1">
+                      Masculino
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    <label class="form-check-label formularioForm__formulario" for="gridRadios2">
+                      Femenino
+                    </label>
+                  </div>
+                  <div class="form-check disabled">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                    <label class="form-check-label formularioForm__formulario" for="gridRadios3">
+                      Prefiero No Decirlo
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              <select class="form-select__cliente" aria-label="Default select example">
+                <option selected>Tipo De Cliente</option>
+                <option value="1">Minorista</option>
+                <option value="2">Mayorista</option>
+              </select>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label__mensaje formularioForm__formulario">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="botones">
+                <input class="enviar" type="submit"> <input class="cerrar" type="reset">
+              </div>
+            </div>
+            <div class="wpp">
+              <a href="https://api.whatsapp.com/send?phone=+54 9 1160204810"><img class="wppFormulario" src="../imagen/whatsapp-logo-1.png"></a>
+              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <p class="wpp__p">Ademas Pueden Contactarnos Mediante <span class="wpp__span">whatsapp</span></p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+            </div>
+          </div>
         </form>
+        
     </section>
 
     <footer class="fondo">
@@ -97,13 +144,13 @@
       
         <div class="footer__lista">
           <ul class="lista__ul"> 
-            <li class="lista__li"><a class="lista__a" href="../index.html">Inicio</a></li>
+            <li class="lista__li"><a class="lista__a" href="../index.html">Volver Al Inicio</a></li>
             <hr class="linea">
-            <li class="lista__li"><a class="lista__a" href="seccion-3.html">¿Quienes somos?</a></li>
+            <li class="lista__li"><a class="lista__a" href="seccion-3.html">Informacion De Nosotros</a></li>
             <hr class="linea">
-            <li class="lista__li"><a class="lista__a" href="seccion-1.html">Contacto</a></li>
+            <li class="lista__li"><a class="lista__a" href="seccion-1.html">Forma De Contacto</a></li>
             <hr class="linea">
-            <li class="lista__li"><a class="lista__a" href="dondeEstamos.html">¿Donde Encontarnos?</a></li>
+            <li class="lista__li"><a class="lista__a" href="dondeEstamos.html">Ubicacion</a></li>
             <hr class="linea">
           </ul>
         </div>

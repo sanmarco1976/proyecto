@@ -79,3 +79,13 @@ $medida:chico;
         height: 12rem;
     }
 }
+.info__Compra:hover, .info__wpp:hover, .info__envios:hover, .info__Segura:hover{
+    transform: scale(1.03, 1.03);
+}
+.dondeEncontrarnos:hover{
+    transform: scale(1.06, 1.06);
+}
+#secCate:hover, #secCate--2:hover, #secCate--21:hover, #secCate--22:hover, #secCate--23:hover, #secCate--3:hover, #secCate--31:hover, #secCate--32:hover, #secCate--33:hover{
+    transform: scale(1.03, 1.03);
+
+}

@@ -28,13 +28,11 @@
     }
     .header{
         grid-template-columns: 1fr 3fr;   
-        h1{
-            font-size: 1.5rem;
-
-        }
+    
         .header__logo{
             width: 5.4rem;
             height: 5.4rem;
+            margin-top: 2rem;
         }
     }
 
@@ -69,6 +67,28 @@
             "im3 im4"
             "lp lp1"
             "lp2 lp3";
+        }
+    }
+    #grilla1{
+        .form{
+            margin-top: 2rem;
+        }
+        .footer__logo{
+            width: 6rem;
+            height: 6rem;
+        }
+        #quienesSomosDiv{
+            margin-top: 2rem;
+        }
+        .dondeEstamos{
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .bodyCate{
+            margin-top: 2rem;
+        }
+        .alert-warning{
+            height: 35%;
         }
     }
 }
@@ -185,6 +205,26 @@
             .dondeEncontrarnos{
                 margin-left: 3rem;
             }
+        }
+        .wppFormulario{
+            width: 7rem;
+            height: 7rem;
+        }
+        .form-control__nombre, .form-control, .form-control__apellido, .form-select__cliente{
+            width:60%;
+        }
+        .botones{
+            width: 60%;
+        }
+        .form{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        .alert-warning{
+            height: 40%;
+        }
+        #quienesSomosDiv{
+            margin-top: 1rem;
         }
     }
     .precioPrincipal{
@@ -376,8 +416,34 @@
                     "envios"
                     "segura";
             }
-        
-            
+        }
+        .form-control__nombre, .form-control, .form-control__apellido, .form-select__cliente{
+            width:80%;
+        }
+        .botones{
+            width: 80%;
+            .enviar{
+                grid-area: enviar;
+                width: 80%;
+            }
+            .cerrar{
+                grid-area: cerrar;
+                width: 80%;
+            }
+        }
+        .formulario{
+            display: grid;
+            grid-template-areas: 
+            "form"
+            "wpp";
+            margin-bottom: 2rem;
+        }
+        .wpp{
+            grid-area: wpp;
+            margin-top: 1rem;
+        }
+        .alert-warning{
+            height: 83%;
         }
         .logo-s3{
             display: none;

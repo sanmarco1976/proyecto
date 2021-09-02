@@ -146,21 +146,64 @@
     }
     
     .form{
-        display: grid;
         grid-area: body;
-        margin-bottom: $margin1rem;
     }
     form{
         @include display;
         grid-template-areas: 
-        "h2"
+        "h2 "
         "formulario";
+        margin: 2rem;
+        margin-bottom: 0rem;
+        align-items: center;
     }
-    /* ol */
-    .formularioForm{
-        grid-area: formulario;
+    .formulario{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "form wpp";
     }
-    /* h2 del formulario */
+    .formulario__hoja{
+        grid-area: form;
+        margin-bottom: 1rem;
+    }
+    .wpp{
+        grid-area: wpp;
+        margin-top: 3rem;
+        display: grid;
+        grid-template-areas: 
+        "logowpp alerta";
+    }
+    .wppFormulario{
+        grid-area: logowpp;
+    }
+    .form-control__nombre, .form-control, .form-control__apellido, .form-select__cliente{
+        width:70%;
+    }
+    .botones{
+        display: grid;
+        grid-template-areas: 
+        "enviar cerrar";
+        width: 70%;
+        .enviar{
+            grid-area: enviar;
+            width: 70%;
+        }
+        .cerrar{
+            grid-area: cerrar;
+            width: 70%;
+        }
+    }
+    .alert-warning{
+        width: 95%;
+        height: 25%;
+        margin-left: 2rem;
+        grid-area: alerta;
+    }
+    .col{
+        flex: auto;
+    }
+    
     h2{
         margin-left: 1.2rem;
         grid-area: h2;
