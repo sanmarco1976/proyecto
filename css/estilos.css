@@ -155,6 +155,12 @@ header .header__logo {
   height: 9rem;
   border-radius: 3rem; }
 
+.footer__img {
+  width: 2rem;
+  height: 2rem;
+  float: right;
+  margin-right: 2rem; }
+
 .imgPagPrincipal {
   height: 40rem;
   border-radius: 1rem;
@@ -697,6 +703,11 @@ footer {
     #grilla .footer .footer__logo {
       width: 6rem;
       height: 6rem; }
+    #grilla .footer__img {
+      width: 2rem;
+      height: 2rem;
+      float: auto;
+      margin-right: 1rem; }
     #grilla .navbar {
       display: flex; }
     #grilla .bodyPrin {
@@ -704,6 +715,11 @@ footer {
       grid-template-areas: "im1" "im2" "im3" "im4" "lp" "lp1" "lp2" "lp3"; }
     #grilla .colorDes, #grilla .colorDes1 {
       font-size: 1.4rem; }
+    #grilla #secCate:hover, #grilla .bodyPrin #secCate--2:hover, #grilla1 .bodyPrin #grilla #secCate--2:hover, #grilla .bodyPrin #secCate--21:hover, #grilla1 .bodyPrin #grilla #secCate--21:hover, #grilla .bodyPrin #secCate--22:hover, #grilla1 .bodyPrin #grilla #secCate--22:hover, #grilla .bodyPrin #secCate--23:hover, #grilla1 .bodyPrin #grilla #secCate--23:hover, #grilla .bodyPrin #secCate--3:hover, #grilla1 .bodyPrin #grilla #secCate--3:hover, #grilla .bodyPrin #secCate--31:hover, #grilla1 .bodyPrin #grilla #secCate--31:hover, #grilla .bodyPrin #secCate--32:hover, #grilla1 .bodyPrin #grilla #secCate--32:hover, #grilla .bodyPrin #secCate--33:hover, #grilla1 .bodyPrin #grilla #secCate--33:hover, #grilla #secCate--2:hover, #grilla #secCate--21:hover, #grilla #secCate--22:hover, #grilla #secCate--23:hover, #grilla #secCate--3:hover, #grilla #secCate--31:hover, #grilla #secCate--32:hover, #grilla #secCate--33:hover {
+      transform: none; }
+    #grilla .divCate1__imgCate {
+      width: 8rem;
+      height: 8rem; }
   #grilla1 nav {
     margin-bottom: 1rem; }
     #grilla1 nav .ulBarra {
@@ -743,13 +759,20 @@ footer {
       width: 80%; }
   #grilla1 .formulario {
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-areas: "form" "wpp";
     margin-bottom: 2rem; }
   #grilla1 .wpp {
     grid-area: wpp;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    grid-template-areas: "logowpp"  "alerta"; }
+  #grilla1 .wppFormulario {
+    grid-area: logowpp;
+    margin-bottom: 2rem; }
   #grilla1 .alert-warning {
-    height: 83%; }
+    width: 100%;
+    height: 83%;
+    margin-left: 0rem; }
   #grilla1 .logo-s3 {
     display: none; }
   #grilla1 .dondeEstamos .dondeEncontrarnos {
