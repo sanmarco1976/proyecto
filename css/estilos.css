@@ -505,6 +505,7 @@ footer {
     grid-template-columns: auto;
     grid-template-areas: "nav" "header" "body  " "footer "; }
     #grilla nav {
+      margin-bottom: 0rem;
       height: 100%; }
     #grilla .bodyPrin {
       grid-template-areas: "im1 im2 lp" "im3 im4 lp1" "lp2 lp3 none"; }
