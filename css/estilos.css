@@ -51,7 +51,7 @@ h5, .lista__a {
   background-color: #43736A; }
 
 .colorDirecc {
-  color: blueviolet; }
+  color: black; }
 
 .colorDes, .colorDes1 {
   color: white; }
@@ -63,6 +63,12 @@ h5, .lista__a {
 .alert-warning {
   background-color: #0D0D0D;
   border-color: white; }
+
+.accordion-button:not(.collapsed), .accordion-button:focus, .accordion-button:hover {
+  background-color: black !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: white !important; }
 
 html {
   font-family: 'Open Sans', sans-serif; }
@@ -123,7 +129,8 @@ h3 {
   font-size: 2rem; }
 
 .colorDirecc {
-  font-size: 2.4rem; }
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 4px #ffffff; }
 
 .dondeEncontrarnos__p--nombre, .dondeEncontrarnos__p--texto {
   color: white !important;

@@ -57,7 +57,7 @@ h5, .lista__a{
     background-color: $colorSec;
 }
 .colorDirecc{
-    color: blueviolet;
+    color: rgb(0, 0, 0);
 }
 .colorDes,.colorDes1{
     color: rgb(255, 255, 255);
@@ -70,4 +70,10 @@ h5, .lista__a{
 .alert-warning{
     background-color: $colorNegro;
     border-color: white;
+}
+.accordion-button:not(.collapsed), .accordion-button:focus, .accordion-button:hover{
+    background-color: black!important;
+    border: none!important;
+    box-shadow: none!important;
+    color: white!important;
 }
