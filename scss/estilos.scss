@@ -116,11 +116,7 @@
     footer{
         grid-area: footer;
     }
-    .fondo{
-        position: absolute;
-        bottom: 0px;
-        width: 100%;
-    }
+    
     .footer{
         display: grid;
         margin-top: $margin1rem;
@@ -147,6 +143,8 @@
     
     .form{
         grid-area: body;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
     form{
         @include display;
@@ -219,7 +217,8 @@
             "img p"
             "info info";
         gap: 1rem 1rem;
-        margin-bottom: $margin1rem;
+        margin-top: $margin1rem;
+        margin-bottom: 1rem;
         grid-area: body;
         justify-items: stretch;
         align-items: stretch;
@@ -351,6 +350,8 @@
     }
     .dondeEstamos{
         grid-area: body;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         .dondeEncontrarnos{
             display: grid;
             grid-template-columns: auto auto ;

@@ -12,7 +12,11 @@ body#grilla, body#grilla1 {
   body#grilla .divCate1__pCate, body#grilla footer, body#grilla h2, body#grilla .formularioForm__formulario, body#grilla p, body#grilla .mediosContacto__medios, body#grilla1 .divCate1__pCate, body#grilla1 footer, body#grilla1 h2, body#grilla1 .formularioForm__formulario, body#grilla1 p, body#grilla1 .mediosContacto__medios {
     color: white; }
   body#grilla .cat:hover, body#grilla1 .cat:hover {
-    background-color: #79F2D0; }
+    background-color: #43736A;
+    color: black; }
+
+.active1 {
+  background-color: #43736A; }
 
 .bg-light {
   background-color: #0D0D0D !important; }
@@ -77,8 +81,8 @@ header h1 {
   color: white;
   text-transform: uppercase;
   font-style: bold;
-  margin-top: 1rem;
-  font-size: 6rem; }
+  margin-top: 3rem;
+  font-size: 4rem; }
 
 h2 {
   text-transform: uppercase; }
@@ -142,10 +146,12 @@ h3 {
   text-transform: uppercase; }
 
 header .header__logo {
-  width: 11rem;
-  height: 11rem;
-  border-radius: 11rem;
-  margin: 1rem; }
+  width: 6rem;
+  height: 6rem;
+  border-radius: 6rem;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem; }
 
 .logo-s3 {
   width: 15rem;
@@ -185,9 +191,6 @@ header .header__logo {
 .wppFormulario {
   width: 10rem;
   height: 10rem; }
-
-.cat--Cate {
-  margin-left: -2rem; }
 
 .divCate1--divCate2 {
   grid-area: b2; }
@@ -320,10 +323,6 @@ footer {
     margin-bottom: 1rem; }
   #grilla footer, #grilla1 footer {
     grid-area: footer; }
-  #grilla .fondo, #grilla1 .fondo {
-    position: absolute;
-    bottom: 0px;
-    width: 100%; }
   #grilla .footer, #grilla1 .footer {
     display: grid;
     margin-top: 1rem;
@@ -342,7 +341,9 @@ footer {
       margin: 0rem;
       width: auto; }
   #grilla .form, #grilla1 .form {
-    grid-area: body; }
+    grid-area: body;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
   #grilla form, #grilla1 form {
     display: grid;
     grid-template-columns: auto;
@@ -394,6 +395,7 @@ footer {
     grid-template-columns: 1fr 3fr;
     grid-template-areas: "img p" "info info";
     gap: 1rem 1rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     grid-area: body;
     justify-items: stretch;
@@ -479,7 +481,9 @@ footer {
   #grilla .navbar.navbar-light.bg-light.fixed-top, #grilla1 .navbar.navbar-light.bg-light.fixed-top {
     margin-bottom: 0rem; }
   #grilla .dondeEstamos, #grilla1 .dondeEstamos {
-    grid-area: body; }
+    grid-area: body;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
     #grilla .dondeEstamos .dondeEncontrarnos, #grilla1 .dondeEstamos .dondeEncontrarnos {
       display: grid;
       grid-template-columns: auto auto;
@@ -522,8 +526,10 @@ footer {
       width: 5.4rem;
       height: 5.4rem;
       margin-top: 2rem; }
-  #grilla1 .divCate1, #grilla1 .divCate1--divCate2, #grilla1 .divCate1--divCate3, #grilla1 .divCate1--divCate4, #grilla1 .divCate1--divCate5, #grilla1 .divCate1--divCate6, #grilla1 .divCate1--divCate2, #grilla1 .divCate1--divCate3 {
-    grid-template-areas: "nom" "img" "des"; }
+  #grilla1 {
+    grid-template-areas: "nav" "header" "body  " "footer "; }
+    #grilla1 .divCate1, #grilla1 .divCate1--divCate2, #grilla1 .divCate1--divCate3, #grilla1 .divCate1--divCate4, #grilla1 .divCate1--divCate5, #grilla1 .divCate1--divCate6, #grilla1 .divCate1--divCate2, #grilla1 .divCate1--divCate3 {
+      grid-template-areas: "nom" "img" "des"; }
   .descripcion {
     margin-bottom: 0.4rem;
     margin-left: 0.3rem; }
@@ -583,7 +589,13 @@ footer {
     #grilla .bodyPrin {
       grid-template-areas: "im1 im2" "im3 im4" "lp lp1" "lp2 lp3"; }
   #grilla1 {
-    grid-template-areas: "nav" "body" "footer"; }
+    grid-template-areas: "nav" "header" "body  " "footer "; }
+    #grilla1 .header .header__logo {
+      width: 5.4rem;
+      height: 5.4rem;
+      margin-top: 2rem; }
+    #grilla1 .header h1 {
+      font-size: 3rem; }
     #grilla1 nav {
       grid-row: 1/2;
       grid-column: 1/7;
@@ -673,13 +685,27 @@ footer {
       grid-column: 1/5; }
     #grilla .footer {
       grid-template-columns: 1fr 1fr; }
-  #grilla1 nav .cat {
-    font-size: 1rem; }
-  #grilla1 .formularioForm, #grilla1 .mediosContacto__medios {
-    margin-left: -1rem;
-    margin-right: 1rem; }
-  #grilla1 .footer {
-    grid-template-columns: 1fr 1fr; } }
+  #grilla1 {
+    grid-template-areas: "nav header " "body body " "footer footer"; }
+    #grilla1 .header {
+      grid-column: 2/5;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "logo h1"; }
+      #grilla1 .header .header__logo {
+        width: 4rem;
+        height: 4rem;
+        margin: 1rem; }
+      #grilla1 .header h1 {
+        font-size: 3rem;
+        margin: 1rem; }
+    #grilla1 nav .cat {
+      font-size: 1rem; }
+    #grilla1 .formularioForm, #grilla1 .mediosContacto__medios {
+      margin-left: -1rem;
+      margin-right: 1rem; }
+    #grilla1 .footer {
+      grid-template-columns: 1fr 1fr; } }
 
 @media only screen and (max-width: 480px) {
   #grilla {
@@ -728,73 +754,87 @@ footer {
     #grilla .divCate1__imgCate {
       width: 8rem;
       height: 8rem; }
-  #grilla1 nav {
-    margin-bottom: 1rem; }
-    #grilla1 nav .ulBarra {
+  #grilla1 {
+    grid-template-rows: 8.5rem auto auto auto;
+    grid-template-areas: "nav" "header" "body" "footer"; }
+    #grilla1 .header {
+      grid-column: 1/5;
+      grid-row: 2/3;
+      grid-template-columns: auto 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "logo h1";
+      margin-top: -5rem; }
+      #grilla1 .header h1 {
+        font-size: 2.5rem;
+        margin: 0rem;
+        margin-top: 1rem; }
+    #grilla1 nav {
+      margin-bottom: 1rem; }
+      #grilla1 nav .ulBarra {
+        display: none; }
+    #grilla1 .navbar {
+      display: flex; }
+    #grilla1 .bodyCate {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "b1" "b2" "b3" "b4" "b5"  "b6";
+      grid-column-gap: 1rem;
+      grid-row-gap: 1rem;
+      grid-area: body;
+      margin-top: 1rem;
+      margin-left: 1rem;
+      margin-right: 1rem; }
+    #grilla1 footer {
+      margin-top: 3rem; }
+    #grilla1 .footer {
+      grid-template-columns: 1fr 4fr; }
+      #grilla1 .footer .footer__logo {
+        width: 6rem;
+        height: 6rem; }
+      #grilla1 .footer .card-header, #grilla1 .footer .card-title, #grilla1 .footer .card-text {
+        font-size: 0.9rem; }
+    #grilla1 #quienesSomosDiv .info {
+      grid-template-areas: "compra"  "wpp" "envios" "segura"; }
+    #grilla1 .form-control__nombre, #grilla1 .form-control, #grilla1 .form-control__apellido, #grilla1 .form-select__cliente {
+      width: 80%; }
+    #grilla1 .botones {
+      width: 80%; }
+      #grilla1 .botones .enviar {
+        grid-area: enviar;
+        width: 80%; }
+      #grilla1 .botones .cerrar {
+        grid-area: cerrar;
+        width: 80%; }
+    #grilla1 .formulario {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: "form" "wpp";
+      margin-bottom: 2rem; }
+    #grilla1 .wpp {
+      grid-area: wpp;
+      margin-top: 1rem;
+      grid-template-areas: "logowpp"  "alerta"; }
+    #grilla1 .wppFormulario {
+      grid-area: logowpp;
+      margin-bottom: 2rem; }
+    #grilla1 .alert-warning {
+      width: 100%;
+      height: 83%;
+      margin-left: 0rem; }
+    #grilla1 .logo-s3 {
       display: none; }
-  #grilla1 .navbar {
-    display: flex; }
-  #grilla1 .bodyCate {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "b1" "b2" "b3" "b4" "b5"  "b6";
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-    grid-area: body;
-    margin-top: 0rem;
-    margin-left: 1rem;
-    margin-right: 1rem; }
-  #grilla1 footer {
-    margin-top: 3rem; }
-  #grilla1 .footer {
-    grid-template-columns: 1fr 4fr; }
-    #grilla1 .footer .footer__logo {
-      width: 6rem;
-      height: 6rem; }
-    #grilla1 .footer .card-header, #grilla1 .footer .card-title, #grilla1 .footer .card-text {
-      font-size: 0.9rem; }
-  #grilla1 #quienesSomosDiv .info {
-    grid-template-areas: "compra"  "wpp" "envios" "segura"; }
-  #grilla1 .form-control__nombre, #grilla1 .form-control, #grilla1 .form-control__apellido, #grilla1 .form-select__cliente {
-    width: 80%; }
-  #grilla1 .botones {
-    width: 80%; }
-    #grilla1 .botones .enviar {
-      grid-area: enviar;
-      width: 80%; }
-    #grilla1 .botones .cerrar {
-      grid-area: cerrar;
-      width: 80%; }
-  #grilla1 .formulario {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "form" "wpp";
-    margin-bottom: 2rem; }
-  #grilla1 .wpp {
-    grid-area: wpp;
-    margin-top: 1rem;
-    grid-template-areas: "logowpp"  "alerta"; }
-  #grilla1 .wppFormulario {
-    grid-area: logowpp;
-    margin-bottom: 2rem; }
-  #grilla1 .alert-warning {
-    width: 100%;
-    height: 83%;
-    margin-left: 0rem; }
-  #grilla1 .logo-s3 {
-    display: none; }
-  #grilla1 .dondeEstamos .dondeEncontrarnos {
-    grid-template-columns: 1fr;
-    grid-template-areas: "info" "mapa" "horarios"; }
-    #grilla1 .dondeEstamos .dondeEncontrarnos .dondeEncontrarnos__ul {
-      margin-left: -3rem !important; }
-      #grilla1 .dondeEstamos .dondeEncontrarnos .dondeEncontrarnos__ul .btn.btn-secondary.dropdown-toggle {
-        width: 7rem;
-        height: 2rem; }
-      #grilla1 .dondeEstamos .dondeEncontrarnos .dondeEncontrarnos__ul ul.dropdown-menu.show .dondeEncontrarnos__li--horarios {
-        font-size: 0.8rem; }
-    #grilla1 .dondeEstamos .dondeEncontrarnos .dondeEncontrarnos__p .dondeEncontrarnos__p--texto, #grilla1 .dondeEstamos .dondeEncontrarnos .dondeEncontrarnos__p .colorDirecc {
-      font-size: 1.6rem; }
-    #grilla1 .dondeEstamos .dondeEncontrarnos .dondeEncontrarnos__mapa {
-      width: 15rem;
-      height: 15rem; } }
+    #grilla1 .dondeEstamos .dondeEncontrarnos {
+      grid-template-columns: 1fr;
+      grid-template-areas: "info" "mapa" "horarios"; }
+      #grilla1 .dondeEstamos .dondeEncontrarnos .dondeEncontrarnos__ul {
+        margin-left: -3rem !important; }
+        #grilla1 .dondeEstamos .dondeEncontrarnos .dondeEncontrarnos__ul .btn.btn-secondary.dropdown-toggle {
+          width: 7rem;
+          height: 2rem; }
+        #grilla1 .dondeEstamos .dondeEncontrarnos .dondeEncontrarnos__ul ul.dropdown-menu.show .dondeEncontrarnos__li--horarios {
+          font-size: 0.8rem; }
+      #grilla1 .dondeEstamos .dondeEncontrarnos .dondeEncontrarnos__p .dondeEncontrarnos__p--texto, #grilla1 .dondeEstamos .dondeEncontrarnos .dondeEncontrarnos__p .colorDirecc {
+        font-size: 1.6rem; }
+      #grilla1 .dondeEstamos .dondeEncontrarnos .dondeEncontrarnos__mapa {
+        width: 15rem;
+        height: 15rem; } }

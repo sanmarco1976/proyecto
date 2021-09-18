@@ -17,8 +17,12 @@ body#grilla, body#grilla1{
         color:rgb(255, 255, 255);
     }
     .cat:hover{
-        background-color: $colorPrinFondo;
+        background-color: $colorSec;
+        color: black;
     }
+}
+.active1{
+    background-color: $colorSec;
 }
 .bg-light {
     background-color: $colorNegro !important;

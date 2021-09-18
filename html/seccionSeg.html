@@ -15,6 +15,10 @@
     <meta name="keywords" content="Local, Seguridad, Productos, ¿Quienes Somos?, Contactanos">
 </head>
 <body id="grilla1">
+  <header class="header"> <!-- arranca el header -->
+    <a href="../index.html"><img class="header__logo" src="../imagen/logo.jpeg" href="../index.html"></a>
+    <h1 class="animate__animated animate__fadeInDown container">local 16</h1>
+  </header>
   <nav>
     <nav class="navbar navbar-light bg-light fixed-top"> <!-- navbar hamburguesa -->
       <div class="container-fluid">
@@ -60,17 +64,17 @@
     </nav>
       <ul class="ulBarra"> <!-- navbar normal -->
           <li class="barraNavegacionI cat"><a class="cat" href="../index.html">Inicio</a></li>
-          <li class="barraNavegacionC nav-item cat">Categorias
-            <section>   
-                <ul class="ulCategorias">
-                    <li class=" cat cat--Cate"><a class="cat" href="seccionElect.html">Electrónica</a></li>
-                    <li class=" cat cat--Cate"><a class="cat" href="seccionIlu.html">Iluminación</a></li>
-                    <li class=" cat cat--Cate"><a class="cat" href="seccionHYD.html">Hogar y Decoración</a></li>
-                    <li class=" cat cat--Cate"><a class="cat" href="seccionSeg.html">Seguridad</a></li>
-                    <li class=" cat cat--Cate"><a class="cat" href="seccionBelle.html">Belleza</a></li>
-                    <li class=" cat cat--Cate"><a class="cat" href="seccionAcc.html">Accesorios</a></li>
-                </ul>
-            </section> </li> 
+          <li class="nav-item dropdown barraNavegacionC nav-item cat active1">
+            <a class="nav-link dropdown-toggle cat" data-bs-toggle="dropdown"  role="button" aria-expanded="false">Categorias</a>
+            <ul class="ulCategorias dropdown-menu">
+              <li class=" cat cat--Cate"><a class="cat dropdown-item" href="seccionElect.html">Electrónica</a></li>
+              <li class=" cat cat--Cate"><a class="cat dropdown-item" href="seccionIlu.html">Iluminación</a></li>
+              <li class=" cat cat--Cate"><a class="cat dropdown-item" href="seccionHYD.html">Hogar y Decoración</a></li>
+              <li class=" cat cat--Cate"><a class="cat dropdown-item" href="seccionSeg.html">Seguridad</a></li>
+              <li class=" cat cat--Cate"><a class="cat dropdown-item" href="seccionBelle.html">Belleza</a></li>
+              <li class=" cat cat--Cate"><a class="cat dropdown-item" href="seccionAcc.html">Accesorios</a></li>
+            </ul>
+          </li> 
           <li class="barraNavegacionQ cat"><a class="cat" href="seccion-3.html">¿Quienes somos?</a></li>
           <li class="barraNavegacionCa cat"><a class="cat" href="seccion-1.html">Contacto</a></li>
           <li class="barraNavegacionD cat"><a class="cat" href="dondeEstamos.html">¿Donde Encontarnos?</a></li>

@@ -37,6 +37,11 @@
     }
 
     #grilla1{
+        grid-template-areas:
+        "nav"
+        "header"
+        "body  "
+        "footer ";
         .divCate1, .divCate1--divCate2, .divCate1--divCate3{
             grid-template-areas: 
             "nom"
@@ -147,8 +152,19 @@
     #grilla1{
         grid-template-areas:
         "nav"
-        "body"
-        "footer";
+        "header"
+        "body  "
+        "footer ";
+        .header{
+            .header__logo{
+                width: 5.4rem;
+                height: 5.4rem;
+                margin-top: 2rem;
+            }
+            h1{
+                font-size: 3rem;
+            }
+        }
         nav{
             grid-row: 1/2;
             grid-column: 1/7; 
@@ -287,6 +303,22 @@
         }
     }
     #grilla1{
+        grid-template-areas:
+        "nav header "
+        "body body "
+        "footer footer";
+        .header{
+            @include header;
+            .header__logo{
+                width: 4rem;
+                height: 4rem;
+                margin: $margin1rem;
+            }
+            h1{
+                font-size: 3rem;
+                margin: $margin1rem;
+            }
+        }
         nav{
             .cat{
                 font-size: 1rem;
@@ -382,6 +414,26 @@
         }
     }
     #grilla1{
+        grid-template-rows: 8.5rem auto auto auto;
+        grid-template-areas: 
+        "nav"
+        "header"
+        "body"
+        "footer";
+        .header{
+            grid-column: 1/5;
+            grid-row: 2/3;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "logo h1";
+            margin-top: -5rem;
+                h1{
+                    font-size: 2.5rem;
+                    margin: 0rem;
+                    margin-top: 1rem;
+                }
+        }
         nav{
             .ulBarra{
               display: none;
@@ -404,7 +456,7 @@
             grid-column-gap: 1rem;
             grid-row-gap: 1rem;
             grid-area: body;
-            margin-top: 0rem;
+            margin-top: 1rem;
             margin-left: $margin1rem;
             margin-right: $margin1rem;
         }
